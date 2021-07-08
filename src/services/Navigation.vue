@@ -151,7 +151,7 @@ li:hover {
     position: absolute;
     left: 0;
     width: 200px;
-    height: 35vh;
+    height: 40vh;
     flex-direction: column;
     transition: 300ms ease all;
     top: 100px;

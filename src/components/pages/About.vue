@@ -215,10 +215,10 @@ h3 {
   .col-md-2 img {
     width: 100px;
     height: 80px;
-    margin-left: 35%;
+    margin-left: 32%;
   }
   .box {
-    margin-left: 28%;
+    margin-left: 25%;
   }
 
   .box2 {

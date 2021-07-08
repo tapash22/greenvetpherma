@@ -121,7 +121,8 @@ nav > ul > li {
   display: block;
   list-style: none;
   height: 100px;
-  padding: 20px;
+  padding-top: 30px;
+
 }
 
 nav > ul > li > a {
@@ -129,6 +130,7 @@ nav > ul > li > a {
   font-size: 1.3rem;
   font-weight: 500;
   color: #000;
+    margin: 15px;
 }
 li:hover {
   background: #aff;
@@ -149,7 +151,7 @@ li:hover {
     position: absolute;
     left: 0;
     width: 200px;
-    height: 50vh;
+    height: 35vh;
     flex-direction: column;
     transition: 300ms ease all;
     top: 100px;

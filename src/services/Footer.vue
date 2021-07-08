@@ -29,15 +29,15 @@
       <div class="col-md-3 address">
         <h3>About Us</h3>
         <ul>
-          <li>House: 40,&nbsp;Road: 01,</li>
-          <li>Block:E,</li>
-          <li>Bonosree,Dhaka,</li>
-          <li>Bangladesh</li>
+          <li>House: 66,&nbsp;Road: 11,</li>
+          <li>DIT,&nbsp;Merul-Badda</li>
+          <li>Dhaka,&nbsp; Bangladesh </li>
+          <li></li>
         </ul>
       </div>
     </div>
     <div class="col-md-12 ">
-      <p class="ref">All right reserve in @T22</p>
+      <p class="ref">All right reserve in &copy; GreenVetPharma</p>
     </div>
   </div>
 </template>

@@ -2,8 +2,7 @@
   <div class="home">
     <div class="row">
       <div class="col-md-12 image">
-        <img src="../../assets/image/home.jpg" />
-        <h3>Greenvetpharma</h3>
+        <Slider />
       </div>
       <div class="col-md-12 text">
         <p>
@@ -101,6 +100,15 @@
     </div>
   </div>
 </template>
+<script>
+import Slider from '../../services/Slider.vue';
+
+export default {
+  components:{
+    Slider,
+  }
+}
+</script>
 
 <style scoped>
 .home {
@@ -116,8 +124,6 @@
 .image {
   width: 100%;
   height: 400px;
-  padding-left: 10px;
-  padding-right: 0px;
 }
 .image img {
   width: 100%;
@@ -126,16 +132,7 @@
   background-position: center;
   background-size: cover;
 }
-.image h3 {
-  display: flex;
-  justify-content: center;
-  margin-top: -12%;
-  font-size: 4rem;
-  font-weight: 900;
-  font-style: bold;
-  color: green;
-  font-family: "Courier New", Courier, monospace;
-}
+
 .text {
   margin-top: -5px;
   padding: 20px;

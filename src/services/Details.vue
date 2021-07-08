@@ -59,7 +59,6 @@ li {
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
-  margin-left: 50px;
   padding: 10px;
 }
 
@@ -78,33 +77,36 @@ li i {
 }
 @media only screen and (max-width: 767px) {
   .row {
-    width: 100%;
-    height: 100px;
-    padding: 20px;
-  }
-  .text {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background: rgb(3, 77, 7);
+  z-index: 1;
+}
+  .text{
     display: none;
   }
   .details {
     position: relative;
+    width: 100%;
+    height: 100px;
   }
   .details ul {
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
+    padding: 10px;
   }
   .details li {
     list-style: none;
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
-    margin-left: 20px;
-    padding: 5px;
+    text-align: center;
   }
   .details ul li i {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 5px;
   }
 }
 </style>

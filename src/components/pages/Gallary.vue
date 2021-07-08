@@ -104,7 +104,7 @@ h2 {
     height: 350px;
     padding: 10px;
     box-shadow: 2px 2px 5px yellow;
-    margin-left: 3%;
+  
   }
   .card img {
     display: block;

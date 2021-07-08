@@ -1,6 +1,26 @@
 <template>
   <div class="container">
     <h2>About Us</h2>
+    <div class="row my-2">
+      <div class="col-md-2">
+        <img src="../../assets/logo.png" />
+      </div>
+
+      <div class="col-md-10">
+        <div class="box">
+          <h3>Company History</h3>
+        </div>
+        <div class="text">
+          <p class="wrap">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            ratione dicta veritatis ab cupiditate consequatur quis modi harum at
+            quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
+            in tempora.
+          </p>
+          <hr />
+        </div>
+      </div>
+    </div>
 
     <div class="row my-2">
       <div class="col-md-2">
@@ -31,7 +51,7 @@
       <div class="col-md-10">
         <div class="box">
           <transition name="txt">
-            <h3>Mission</h3>
+            <h3>Vission</h3>
           </transition>
         </div>
         <div class="text">
@@ -51,7 +71,7 @@
       </div>
       <div class="col-md-10">
         <div class="box">
-          <h3>Mission</h3>
+          <h3>Activetice</h3>
         </div>
         <div class="text">
           <p class="wrap">
@@ -64,51 +84,13 @@
         </div>
       </div>
     </div>
-    <div class="row my-2">
+        <div class="row my-2">
       <div class="col-md-2">
         <img src="../../assets/logo.png" />
       </div>
       <div class="col-md-10">
         <div class="box">
-          <h3>Mission</h3>
-        </div>
-        <div class="text">
-          <p class="wrap">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            ratione dicta veritatis ab cupiditate consequatur quis modi harum at
-            quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
-            in tempora.
-          </p>
-          <hr />
-        </div>
-      </div>
-    </div>
-    <div class="row mt-2">
-      <div class="col-md-2">
-        <img src="../../assets/logo.png" />
-      </div>
-      <div class="col-md-10">
-        <div class="box">
-          <h3>Vission</h3>
-        </div>
-        <div class="text">
-          <p class="wrap">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            ratione dicta veritatis ab cupiditate consequatur quis modi harum at
-            quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
-            in tempora.
-          </p>
-          <hr />
-        </div>
-      </div>
-    </div>
-    <div class="row my-2">
-      <div class="col-md-2">
-        <img src="../../assets/logo.png" />
-      </div>
-      <div class="col-md-10">
-        <div class="box">
-          <h3>Core Value</h3>
+          <h3>UP comming Activetice</h3>
         </div>
         <div class="text">
           <p class="wrap">

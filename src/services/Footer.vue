@@ -27,12 +27,13 @@
         </ul>
       </div>
       <div class="col-md-3 address">
-        <h3>About Us</h3>
+        <h3>HeadOffice</h3>
         <ul>
           <li>House: 66,&nbsp;Road: 11,</li>
           <li>DIT,&nbsp;Merul-Badda</li>
           <li>Dhaka,&nbsp; Bangladesh </li>
-          <li></li>
+          <li>+8801917114636</li>
+          <li>info@GreenVetPharma.bd.com</li>
         </ul>
       </div>
     </div>

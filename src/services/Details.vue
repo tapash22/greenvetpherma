@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-md-6 text">
-      <p>"Treat your animal in green way"</p>
+      <p>"Treat the animal in green way"</p>
     </div>
     <div class="col-md-6 details">
       <ul>

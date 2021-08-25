@@ -27,7 +27,7 @@
         </ul>
       </div>
       <div class="col-md-3 address">
-        <h3>HeadOffice</h3>
+        <h3>Head Office</h3>
         <ul>
           <li>House: 66,&nbsp;Road: 11,</li>
           <li>DIT,&nbsp;Merul-Badda</li>
@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="col-md-12 ">
-      <p class="ref">All right reserve in &copy; GreenVetPharma</p>
+      <p class="ref">All right reserve in &copy; UltraWave</p>
     </div>
   </div>
 </template>
@@ -46,7 +46,7 @@
 <style scoped>
 .footer {
   width: 100%;
-  background: #fff;
+ background:rgb(243, 181, 9);
   box-shadow: 2px 2px 5px green;
 }
 .row {
@@ -77,10 +77,9 @@ h2 {
   width: 60px;
   height: 60px;
   list-style: none;
-  background: rgb(43, 187, 55);
+  background: #fff;
   margin: 10px;
   border-radius: 50%;
-  filter: grayscale(80%);
   transition: 0.4s all ease;
 }
 .icons ul li:hover{
@@ -92,6 +91,7 @@ h2 {
 .icons i {
   font-size: 2.5rem;
   font-weight: 700;
+  color: green;
   align-items: center;
   padding: 10px;
 }
@@ -102,22 +102,25 @@ h2 {
 .address h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  border-bottom: 2px solid green;
-  width: 120px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+   font-family: "Oswald", sans-serif;
+  width: 150px;
+  color: #fff;
 }
 .address ul li {
   list-style: none;
   font-size: 1rem;
   font-weight: 500;
-  color: #000;
+  color: #fff;
   text-align: left;
 }
 .col-md-12 .ref{
   display: flex;
   justify-content: center;
-  font-size: 0.9 rem;
+  font-size: 1 rem;
   font-weight: 500;
-  color: gray;
+  font-family: 'Lobster', cursive;
+  color: #000;
   padding: 10px;
 }
 

@@ -12,27 +12,19 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {};
-  },
-};
-</script>
-
 <style scoped>
 .row {
   position: fixed;
   width: 100%;
   height: 50px;
-  background: rgb(3, 77, 7);
+  background-color: rgb(243, 181, 9);
   margin-left: 2px;
   z-index: 1;
 }
 .text {
   position: relative;
   overflow: hidden;
-  border-right: 1px solid #fff;
+
   padding: 10px;
 }
 .text p {
@@ -77,13 +69,13 @@ li i {
 }
 @media only screen and (max-width: 767px) {
   .row {
-  position: fixed;
-  width: 100%;
-  height: 100px;
-  background: rgb(3, 77, 7);
-  z-index: 1;
-}
-  .text{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: rgb(3, 77, 7);
+    z-index: 1;
+  }
+  .text {
     display: none;
   }
   .details {
@@ -93,7 +85,7 @@ li i {
   }
   .details ul {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     padding: 10px;
   }
   .details li {

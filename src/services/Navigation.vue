@@ -1,6 +1,5 @@
 <template>
   <div class="header">
-    <Details />
     <nav class="fixed-top" :class="{ change_color: scrollPosition > 15 }">
       <a class="navbar-brand" href="#">
         <img src="../assets/image/logo.png" @click.prevent="onToggle" />
@@ -10,16 +9,24 @@
           <router-link class="link" :to="pgs.url">
             {{ pgs.text }}
           </router-link>
+          <span v-if="pgs.child">
+            <ul>
+              <li v-for="i in pgs.child" :key="i.text">
+                <router-link :to="i.url">
+                  {{ i.text }}
+                </router-link>
+               
+              </li>
+            </ul>
+          </span>
         </li>
       </ul>
     </nav>
   </div>
 </template>
 <script>
-import Details from "./Details.vue";
 export default {
   components: {
-    Details,
   },
   data() {
     return {
@@ -28,7 +35,7 @@ export default {
       child: true,
       pages: [
         {
-          url: "/",
+          url: "/home",
           text: "Home",
         },
         {
@@ -40,16 +47,28 @@ export default {
           text: "Products",
           child: [
             {
-              url: "/product1",
-              text: "Product1",
+              url: "poultry",
+              text: "Poultry",
             },
             {
-              url: "/product2",
-              text: "Product2",
+              url: "ruminent",
+              text: "Ruminent",
             },
             {
-              url: "/product3",
-              text: "Product3",
+              url: "aqua",
+              text: "AQua",
+            },
+              {
+              url: "petanimal",
+              text: "Pet-Animal",
+            },
+            {
+              url: "vetClinic",
+              text: "Vet Clinic",
+            },
+             {
+              url: "others",
+              text: "Others",
             },
           ],
         },
@@ -84,30 +103,34 @@ export default {
 
 <style scoped>
 .change_color {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgb(243, 181, 9);
   color: #fff;
+  height: 12%;
+  transition: 0.4s all ease-out;
 }
 .header {
   width: 100%;
   padding: 0;
+  background: rgba(0, 0, 0, 0.589);
 }
 nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   height: 100px;
-  box-shadow: 2px 2px 3px green;
+  box-shadow: 2px 2px 3px #fff;
   margin: 0;
   padding: 0;
   margin-top: 50px;
+  background: rgba(177, 126, 33, 0.712);
 }
 .navbar-brand {
   width: 300px;
-  height: 100px;
-  margin-left: 50px;
+  height: 100%;
+  margin-left: 10px;
 }
 img {
-  width: 80%;
+  width: 100%;
   height: 100%;
   padding: 5px;
 }
@@ -115,25 +138,60 @@ img {
 nav > ul {
   display: flex;
   right: 0;
+  padding:15px;
 }
 
 nav > ul > li {
   display: block;
   list-style: none;
   height: 100px;
-  padding-top: 30px;
-
+  margin:10px;
 }
 
 nav > ul > li > a {
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 500;
-  color: #000;
-    margin: 15px;
+  font-family: "Oswald", sans-serif;
+  color: #fff; 
+  padding:5px;
 }
-li:hover {
-  background: #aff;
+
+ul li a.router-link-active ,
+ul li a:hover{
+    color: green;
+     font-size: 1.3rem;
+  font-weight: 500;
+}
+ul li:hover span{
+    display: block;
+}
+span{
+    width: 150px;
+    height: 240px;
+    position: absolute;
+    top: 100px;
+    display: none;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.637);
+}
+span li{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    padding: 5px;
+    list-style: none;
+}
+span li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+
+}
+
+span li a:hover{
+  color:green;
 }
 @media screen and (max-width: 759px) {
   nav {
@@ -167,5 +225,45 @@ li:hover {
     margin-left: -30px;
     padding: 5px;
   }
+  ul li a:hover{
+    color: #fff;
+  
+}
+  ul li:hover span{
+    display: block;
+    color: #000;
+}
+
+  span{
+    width: 200px;
+    height: 240px;
+    position: relative;
+    display: none;
+    margin-left:-40px;
+    margin-top: -100px;
+     left: 200px;
+}
+span li{
+    width: 150px;
+    height: 40px;
+    text-align: left;
+    background: #fff;
+    cursor: pointer;
+    padding: 5px;
+    list-style: none;
+}
+span li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+span li:hover{
+   border: 1px solid green;
+}
+  span li a:hover{
+    color: #000;
+    border-bottom: 2px solid yellow;
+}
 }
 </style>

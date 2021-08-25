@@ -1,24 +1,20 @@
 <template>
-  <Navigation />
-  <div class="row">
-    <div class="col-md-12">
-      <router-view />
-
-    </div>
+  <div>
+    <router-view />
   </div>
-  <Footer />
 </template>
 
 <script>
-import Navigation from "./services/Navigation.vue";
-import Footer from "./services/Footer.vue";
-
 export default {
   name: "App",
-  components: {
-    Navigation,
-    Footer,
-  },
+  components: {},
 };
-</script>
+</script> 
+
+<style scoped>
+#app {
+  background: rgb(238, 234, 234); 
+}
+
+</style>
 

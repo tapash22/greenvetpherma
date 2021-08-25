@@ -1,9 +1,7 @@
 <template>
   <div class="home">
+    <Slider />
     <div class="row">
-      <div class="col-md-12 image">
-        <Slider />
-      </div>
       <div class="col-md-12 text">
         <p>
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rem
@@ -13,128 +11,118 @@
       </div>
     </div>
     <div class="container">
-      <div class="row concern">
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-h">
-              <p class="com">Name of Pharma</p>
+      <h2>Our Products</h2>
+      <div
+        class="row concern"
+        data-aos="fade-right"
+        data-aos-delay="800"
+        data-aos-once="false"
+      >
+        <div class="col-md-4">
+          <a href="/poultry">
+            <div class="card">
+              <div class="card-h">
+                <p class="com">Poultry</p>
+              </div>
+              <div class="card-body">
+                <img src="../../assets/image/sample.jpg" />
+              </div>
             </div>
-            <div class="card-body">
-              <img src="../../assets/image/sample.jpg" />
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-h">
-              <p class="com">Name of Pharma</p>
+        <div class="col-md-4">
+          <a href="/ruminent">
+            <div class="card">
+              <div class="card-h">
+                <p class="com">Ruminent</p>
+              </div>
+              <div class="card-body">
+                <img src="../../assets/image/sample.jpg" />
+              </div>
             </div>
-            <div class="card-body">
-              <img src="../../assets/image/sample.jpg" />
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-h">
-              <p class="com">Name of Pharma</p>
+        <div class="col-md-4">
+          <a href="/aqua">
+            <div class="card">
+              <div class="card-h">
+                <p class="com">AQua</p>
+              </div>
+              <div class="card-body">
+                <img src="../../assets/image/sample.jpg" />
+              </div>
             </div>
-            <div class="card-body">
-              <img src="../../assets/image/sample.jpg" />
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-h">
-              <p class="com">Name of Pharma</p>
-            </div>
-            <div class="card-body">
-              <img src="../../assets/image/sample.jpg" />
-            </div>
-          </div>
+          </a>
         </div>
       </div>
-      <div class="row concern">
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-h">
-              <p class="com">Name of Pharma</p>
+      <div
+        class="row concern"
+        data-aos="fade-up"
+        data-aos-delay="800"
+        data-aos-once="false"
+      >
+        <div class="col-md-4">
+          <a href="/petanimal">
+            <div class="card">
+              <div class="card-h">
+                <p class="com">Pet-Animal</p>
+              </div>
+              <div class="card-body">
+                <img src="../../assets/image/sample.jpg" />
+              </div>
             </div>
-            <div class="card-body">
-              <img src="../../assets/image/sample.jpg" />
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-h">
-              <p class="com">Name of Pharma</p>
+        <div class="col-md-4">
+          <a href="/vetClinic">
+            <div class="card">
+              <div class="card-h">
+                <p class="com">Vet Clinic</p>
+              </div>
+              <div class="card-body">
+                <img src="../../assets/image/sample.jpg" />
+              </div>
             </div>
-            <div class="card-body">
-              <img src="../../assets/image/sample.jpg" />
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-h">
-              <p class="com">Name of Pharma</p>
+        <div class="col-md-4">
+          <a href="/others">
+            <div class="card">
+              <div class="card-h">
+                <p class="com">Others</p>
+              </div>
+              <div class="card-body">
+                <img src="../../assets/image/sample.jpg" />
+              </div>
             </div>
-            <div class="card-body">
-              <img src="../../assets/image/sample.jpg" />
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-h">
-              <p class="com">Name of Pharma</p>
-            </div>
-            <div class="card-body">
-              <img src="../../assets/image/sample.jpg" />
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
 </template>
+
 <script>
-import Slider from '../../services/Slider.vue';
+import Slider from "../../services/Slider.vue";
 
 export default {
-  components:{
+  components: {
     Slider,
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
 .home {
-  width: 100%;
-  position: relative;
-  background: #fff;
   margin-top: 150px;
 }
-.container {
+.row {
   width: 100%;
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
-.image {
-  width: 100%;
-  height: 400px;
-}
-.image img {
-  width: 100%;
-  height: 400px;
-  justify-content: center;
-  background-position: center;
-  background-size: cover;
-}
-
 .text {
-  margin-top: -5px;
   padding: 20px;
   box-shadow: 2px 2px 5px green;
   z-index: 1;
@@ -149,15 +137,28 @@ export default {
   font-size: 1.5rem;
   font-weight: 700;
 }
-
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
 .concern {
   position: relative;
   width: 100%;
   padding: 30px;
 }
-
+.concern a {
+  text-decoration: none;
+}
 .concern .card {
-  width: 200px;
+  width: 250px;
   height: 250px;
   box-shadow: 2px 2px 10px blue;
 }
@@ -176,14 +177,14 @@ export default {
   text-align: center;
 }
 .card-body {
-  width: 200px;
+  width: 250px;
   height: 200px;
   background-position: center;
   transition: 1s all ease;
 }
 .card-body img {
-  width: 160px;
-  height: 150px;
+  width: 200px;
+  height: 170px;
   background-position: center;
   transition: 0.7s all ease;
   transform: scale(1.1);
@@ -193,23 +194,16 @@ export default {
 }
 
 @media screen and (max-width: 759px) {
-
-  .image h3 {
-  display: flex;
-  justify-content: center;
-  margin-top: -25%;
-  font-size: 2.5rem;
-  font-weight: 700;
-  font-style: bold;
-  color: green;
-  font-family: "Courier New", Courier, monospace;
-}
-  .concern .col-md-3{
-   display: flex;
+  .concern .col-md-4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
   }
-  .col-md-3 .card{
-     margin-left: 25%;
-     margin-bottom: 20px;
+  .concern .card-body {
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    transition: 1s all ease;
   }
 }
 </style>

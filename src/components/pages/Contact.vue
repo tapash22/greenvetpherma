@@ -1,5 +1,5 @@
 <template>
-  <div class="row mt-5">
+  <div class="row mt-3">
     <div class="col-md-6">
       <h2 class="mt-1">Contact Us</h2>
       <form @submit.prevent="seneMessage" class="msg">
@@ -22,26 +22,27 @@
 <style scoped>
 .row {
   width: 100%;
-  height: 380px;
+  height: 400px;
   opacity: 0.9;
   justify-content: center;
 }
 .col-md-6 {
-  width: 600px;
-  height: 350px;
+  width: 50%;
+  height: 100%;
   box-shadow: 2px 2px 5px blue;
   text-align: center;
+  padding: 10px;
 }
 h2 {
   color: #000;
-  padding: 10px;
+  padding: 5px;
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .msg {
-  padding: 10px;
+  padding: 5px;
   justify-content: center;
 }
 button {
@@ -59,7 +60,8 @@ label {
     justify-content: center;
   }
   .col-md-6 {
-    width: 400px;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     margin-left: 5%;
   }

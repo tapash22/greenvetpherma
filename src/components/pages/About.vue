@@ -1,14 +1,19 @@
 <template>
   <div class="container">
     <h2>About Us</h2>
-    <div class="row my-2">
+    <div
+      class="row my-2"
+      data-aos="fade-left"
+      data-aos-delay="800"
+      data-aos-once="false"
+    >
       <div class="col-md-2">
         <img src="../../assets/logo.png" />
       </div>
 
       <div class="col-md-10">
         <div class="box">
-          <h3>Company History</h3>
+          <h3>History</h3>
         </div>
         <div class="text">
           <p class="wrap">
@@ -22,7 +27,12 @@
       </div>
     </div>
 
-    <div class="row my-2">
+    <div
+      class="row my-2"
+      data-aos="fade-left"
+      data-aos-delay="800"
+      data-aos-once="false"
+    >
       <div class="col-md-2">
         <img src="../../assets/logo.png" />
       </div>
@@ -42,7 +52,12 @@
         </div>
       </div>
     </div>
-    <div class="row my-2">
+    <div
+      class="row my-2"
+      data-aos="fade-left"
+      data-aos-delay="800"
+      data-aos-once="false"
+    >
       <div class="col-md-2">
         <transition name="img">
           <img src="../../assets/logo.png" />
@@ -65,7 +80,12 @@
         </div>
       </div>
     </div>
-    <div class="row my-2">
+    <div
+      class="row my-2"
+      data-aos="fade-right"
+      data-aos-delay="500"
+      data-aos-once="false"
+    >
       <div class="col-md-2">
         <img src="../../assets/logo.png" />
       </div>
@@ -84,7 +104,12 @@
         </div>
       </div>
     </div>
-        <div class="row my-2">
+    <div
+      class="row my-2"
+      data-aos="fade-left"
+      data-aos-delay="800"
+      data-aos-once="false"
+    >
       <div class="col-md-2">
         <img src="../../assets/logo.png" />
       </div>
@@ -103,7 +128,12 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div
+      class="row"
+      data-aos="fade-right"
+      data-aos-delay="900"
+      data-aos-once="false"
+    >
       <div class="col-md-12 mx-4">
         <div class="box2">
           <h3>Quality policy</h3>
@@ -121,15 +151,11 @@
         </div>
       </div>
     </div>
-    <contact></contact>
   </div>
 </template>
 <script>
-import Contact from "./Contact.vue";
 export default {
-  components: {
-    Contact,
-  },
+  components: {},
   mounted() {
     window.scrollTo(0, 0);
   },
@@ -156,8 +182,14 @@ h2 {
   padding: 20px;
   margin-top: -30px;
 }
+.col-md-10 {
+  display: block;
+  justify-content: center;
+}
 .box {
   position: relative;
+  display: flex;
+  justify-content: center;
   width: 150px;
   background: green;
   box-shadow: 5px 5px 5px grey;
@@ -187,26 +219,44 @@ h3 {
     text-transform: uppercase;
   }
   .row {
+    position: relative;
+  }
+  .col-md-2 {
     display: flex;
     justify-content: center;
   }
-  .col-md-2 {
-    align-items: center;
-    justify-content: center;
-  }
   .col-md-2 img {
-    width: 100px;
-    height: 80px;
-    margin-left: 32%;
+    width: 150px;
+    height: 120px;
+    padding: 20px;
+    margin-top: -30px;
+  }
+  .col-md-10 {
+    position: relative;
   }
   .box {
+    width: 150px;
+    background: green;
+    box-shadow: 5px 5px 5px grey;
+    margin-left: 32%;
+    margin-bottom: 10px;
+  }
+  .box2 {
+    width: 200px;
+    background: green;
+    box-shadow: 5px 5px 5px grey;
     margin-left: 25%;
   }
-
-  .box2 {
-    margin-left: 30%;
+  .text {
+    display: flex;
+    justify-content: center;
   }
-  .text p {
+
+  .box h3 {
+    color: #fff;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
     text-align: center;
   }
 }

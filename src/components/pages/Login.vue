@@ -2,7 +2,7 @@
   <div class="row mt-5">
     <div class="col-md-6">
       <h2 class="mt-1">Login Form</h2>
-      <form @submit.prevent="seneMessage" class="msg">
+      <form class="msg">
         <div class="form-group">
           <label>Email</label>
           <input type="text" class="form-control" v-model="user_email" />
@@ -12,18 +12,49 @@
           <input type="password" class="form-control" v-model="user_password" />
         </div>
         <div class="button mt-3">
-          <button type="submit" class="btn btn-lg btn-primary">Login</button>
+          <button @click.prevent="onLogin" class="btn btn-lg btn-primary">
+            Login
+          </button>
         </div>
       </form>
     </div>
   </div>
 </template>
+
 <script>
+import { fb } from "../../firebase";
 export default {
-    mounted() {
+  data() {
+    return {
+      user_email: "",
+      user_password: "",
+    };
+  },
+  mounted() {
     window.scrollTo(0, 0);
   },
-}
+  methods: {
+    onLogin() {
+      fb
+        .auth()
+        .signInWithEmailAndPassword(this.user_email, this.user_password)
+        .then(() => {
+          this.$router.replace('/admin/dashboard');
+        })
+        .catch((error) => {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          if(errorCode === 'auth/wrong-password'){
+            alert("Wrong password.");
+          }else{
+            alert(errorMessage);
+          }
+          console.log(error);
+
+        });
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -64,7 +95,7 @@ label {
 }
 
 @media screen and (max-width: 759px) {
-  .col-md-6{
+  .col-md-6 {
     margin-top: 180px;
     width: 400px;
     height: 300px;

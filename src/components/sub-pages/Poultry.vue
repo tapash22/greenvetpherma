@@ -1,17 +1,16 @@
 <template>
   <div class="products">
-    <h2>Our Product</h2>
+    <h2>Poultry</h2>
     <div class="row">
       <div
         class="col-md-4 my-2"
         v-for="(pdc, index) in products"
         :key="pdc.id"
         :index="index"
-        data-aos="zoom-in"
+         data-aos="zoom-in"
       data-aos-delay="900"
       data-aos-once="false"
       >
-      <router-link :to="pdc.url">
         <div class="box">
           <div class="header">
             <h3>{{ pdc.title }}</h3>
@@ -21,7 +20,6 @@
             <button class="btn btn-primary">Details</button>
           </div>
         </div>
-      </router-link>
       </div>
     </div>
   </div>
@@ -35,38 +33,38 @@ export default {
         {
           id: 1,
           title: "Poultry",
-          img: "https://i.postimg.cc/RZF42Spw/239020602-548316853262866-8205688915792121368-n.jpg",
-          url:'/poultry',
+          img: "https://i.postimg.cc/3ryHCSbC/a.jpg",
+          price: "1000",
         },
         {
           id: 2,
-          title: "Ruminent",
-          img: "https://i.postimg.cc/XYz4bRtm/239055660-561869864942902-8732590383673099750-n.jpg",
-          url:'/ruminent',
+          title: "Poultry",
+          img: "https://i.postimg.cc/BvZr8MKF/b.jpg",
+          price: "1000",
         },
         {
           id: 3,
-          title: "AQua",
-          img: "https://i.postimg.cc/LXkcnw0H/239363573-567311807755963-1020352780872672881-n.jpg",
-          url:'/aqua',
+          title: "Poultry",
+          img: "https://i.postimg.cc/JhyQdXwg/c.jpg",
+          price: "1000",
         },
         {
           id: 4,
-          title: "Pet-Animal",
+          title: "Poultry",
           img: "https://i.postimg.cc/8cbdrBWF/d.jpg",
-          url:'/petanimal',
+          price: "1000",
         },
         {
           id: 5,
-          title: "Vet Clinic",
+          title: "Poultry",
           img: "https://i.postimg.cc/pX2JM4bK/e.jpg",
-          url:'/vetClinic',
+          price: "1000",
         },
         {
           id: 6,
-          title: "Others",
+          title: "Poultry",
           img: "https://i.postimg.cc/NjF85X0M/f.jpg",
-          url:'/others',
+          price: "1000",
         },
        
       ],
@@ -96,9 +94,6 @@ h2 {
   justify-content: center;
   width: 400px;
   height: 300px;
-}
-.col-md-4 a{
-  text-decoration: none;
 }
 .box {
   border: 2px solid rgb(213, 216, 15);

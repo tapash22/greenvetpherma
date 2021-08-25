@@ -1,10 +1,10 @@
 <template>
   <div class="sld">
-    <transition-group name="fade" tag="div">
-      <div class="sd" v-for="i in [currentIndex]" :key="i">
-        <img :src="currentImg" />
-      </div>
-    </transition-group>
+    <div class="sd" v-for="i in [currentIndex]" :key="i">
+      <img :src="currentImg" />
+     
+    </div>
+
     <a class="prev" @click="prev" href="#">&#10094; </a>
     <a class="next" @click="next" href="#">&#10095; </a>
   </div>
@@ -15,62 +15,73 @@ export default {
   data() {
     return {
       images: [
-        "https://i.postimg.cc/mgTRVQmx/4.jpg",
-        "https://i.postimg.cc/xd420BnY/3.jpg",
-        "https://i.postimg.cc/PfZjj6cs/2.jpg",
-        "https://i.postimg.cc/tg7KmDPc/1.jpg"
+        "https://i.postimg.cc/QC5zpRzr/sven-mieke-olon-Uw-Urm-Qk-unsplash.jpg",
+        "https://i.postimg.cc/QdjzTYkR/sticker-mule-q-Nhst-Taw-Qr-I-unsplash.jpg",
+        "https://i.postimg.cc/Xvz1tjSb/daniel-tuttle-IHUF0j-Iey4-unsplash.jpg",
+        "https://i.postimg.cc/j2VgdMS3/benigno-hoyuela-jrk1j7i96-HI-unsplash.jpg",
+        "https://i.postimg.cc/02SHq48Q/s1.jpg",
+        "https://i.postimg.cc/K8rq1g3h/s2.jpg",
+
       ],
       timer: null,
-      currentIndex: 0
+      currentIndex: 0,
     };
   },
 
-//   mounted: function() {
-//     this.startSlide();
-//   },
+  mounted() {
+    this.startSlide();
+  },
 
   methods: {
-    // startSlide: function() {
-    //   this.timer = setInterval(this.next, 4000);
-    // },
+    startSlide() {
+      this.timer = setInterval(this.next, 5000);
+    },
 
-    next: function() {
+    next() {
       this.currentIndex += 1;
     },
-    prev: function() {
+    prev() {
       this.currentIndex -= 1;
-    }
+    },
   },
 
   computed: {
-    currentImg: function() {
+    currentImg() {
       return this.images[Math.abs(this.currentIndex) % this.images.length];
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style scoped>
-.sld{
+.sld {
+    width: 100%;
+  height: 100%;
+  position: relative;
+  justify-content: center;
+}
+
+.sd {
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 img {
-  height:400px;
-  width:1340px;
-  margin-left: 5px;
+  height: 500px;
+  width: 100%;
   opacity: 1;
   filter: brightness(90%);
 }
-
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
-  top: 15%;
+  top: 40%;
   width: auto;
-  color: green;
+  color: #fff;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 500;
   transition: 0.7s ease;
   border-radius: 0 4px 4px 0;
@@ -79,67 +90,51 @@ img {
 }
 
 .next {
-  right: 10px;
+  right: 20px;
 }
-
 .prev {
-  left: 10px;
+  left: 20px;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 0.9s ease;
-  overflow: hidden;
-  visibility: visible;
-  position: absolute;
-  width:100%;
-  opacity: 1;
-}
-
-.fade-enter,
-.fade-leave-to {
-  visibility: hidden;
-  width:100%;
-  opacity: 0;
-}
 @media screen and (max-width: 759px) {
-  .sld{
+  .sld {
+  width: 100%;
+  height: 100%;
+}
+
+.sd {
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
-img {
-  height:400px;
-  width:100%;
-  margin-left: 5px;
-  opacity: 1;
-  filter: brightness(90%);
+  img {
+    height: 300px;
+    width: 100%;
+    opacity: 1;
+    filter: brightness(90%);
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    color: green;
+    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: 0.7s ease;
+    border-radius: 0 4px 4px 0;
+    text-decoration: none;
+    user-select: none;
+  }
+  .next {
+    right: 25px;
+  }
+  .prev {
+    left: 10px;
+  }
 }
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 7%;
-  width: auto;
-  color: green;
-  font-weight: bold;
-  font-size: 2rem;
-  font-weight: 500;
-  transition: 0.7s ease;
-  border-radius: 0 4px 4px 0;
-  text-decoration: none;
-  user-select: none;
-}
-
-.next {
-  right: 5px;
-}
-
-.prev {
-  left: 5px;
-}
-
-}
-
-
-
 </style>

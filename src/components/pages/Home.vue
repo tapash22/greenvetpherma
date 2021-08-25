@@ -125,7 +125,6 @@ export default {
 .text {
   padding: 20px;
   box-shadow: 2px 2px 5px green;
-  z-index: 1;
   background: #fff;
   opacity: 0.8;
 }

@@ -4,7 +4,7 @@
     <div
       class="row my-2"
       data-aos="fade-left"
-      data-aos-delay="800"
+      data-aos-delay="500"
       data-aos-once="false"
     >
       <div class="col-md-2">
@@ -20,9 +20,11 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
             ratione dicta veritatis ab cupiditate consequatur quis modi harum at
             quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
-            in tempora.
+            in tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eius ratione dicta veritatis ab cupiditate consequatur quis modi
+            harum at quos reiciendis, illum optio ipsam pariatur inventore
+            nostrum nobis in tempora.
           </p>
-          <hr />
         </div>
       </div>
     </div>
@@ -30,7 +32,7 @@
     <div
       class="row my-2"
       data-aos="fade-left"
-      data-aos-delay="800"
+      data-aos-delay="500"
       data-aos-once="false"
     >
       <div class="col-md-2">
@@ -48,14 +50,13 @@
             quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
             in tempora.
           </p>
-          <hr />
         </div>
       </div>
     </div>
     <div
       class="row my-2"
       data-aos="fade-left"
-      data-aos-delay="800"
+      data-aos-delay="500"
       data-aos-once="false"
     >
       <div class="col-md-2">
@@ -76,14 +77,13 @@
             quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
             in tempora.
           </p>
-          <hr />
         </div>
       </div>
     </div>
     <div
       class="row my-2"
-      data-aos="fade-right"
-      data-aos-delay="500"
+      data-aos="fade-left"
+      data-aos-delay="300"
       data-aos-once="false"
     >
       <div class="col-md-2">
@@ -100,14 +100,13 @@
             quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
             in tempora.
           </p>
-          <hr />
         </div>
       </div>
     </div>
     <div
       class="row my-2"
       data-aos="fade-left"
-      data-aos-delay="800"
+      data-aos-delay="300"
       data-aos-once="false"
     >
       <div class="col-md-2">
@@ -115,7 +114,7 @@
       </div>
       <div class="col-md-10">
         <div class="box">
-          <h3>UP comming Activetice</h3>
+          <h3>UP comming</h3>
         </div>
         <div class="text">
           <p class="wrap">
@@ -123,30 +122,6 @@
             ratione dicta veritatis ab cupiditate consequatur quis modi harum at
             quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
             in tempora.
-          </p>
-          <hr />
-        </div>
-      </div>
-    </div>
-    <div
-      class="row"
-      data-aos="fade-right"
-      data-aos-delay="900"
-      data-aos-once="false"
-    >
-      <div class="col-md-12 mx-4">
-        <div class="box2">
-          <h3>Quality policy</h3>
-        </div>
-        <div class="text mx-2">
-          <p class="wrap">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem et
-            debitis pariatur dignissimos! Perferendis exercitationem ut tempora
-            blanditiis nesciunt rerum, fugiat doloribus vel ad modi, odit libero
-            porro dolore! Perferendis.Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem et debitis pariatur dignissimos!
-            Perferendis exercitationem ut tempora blanditiis nesciunt rerum,
-            fugiat doloribus vel ad modi, odit libero porro dolore! Perferendis.
           </p>
         </div>
       </div>
@@ -163,49 +138,62 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  width: 100%;
-  height: 100%;
-}
 h2 {
-  margin-top: 150px;
+  margin-top: 100px;
   padding: 20px;
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
-  color: rgb(45, 206, 131);
   text-transform: uppercase;
 }
+.row {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+}
+.col-md-2 {
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+}
 .col-md-2 img {
-  width: 150px;
-  height: 120px;
-  padding: 20px;
-  margin-top: -30px;
+  width: 200px;
+  height: 150px;
+  padding: 10px;
 }
 .col-md-10 {
-  display: block;
-  justify-content: center;
+  padding: 10px;
+  height: 100%;
+  width: 80%;
+  display: flex;
 }
 .box {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 150px;
-  background: green;
-  box-shadow: 5px 5px 5px grey;
+  width: 30%;
+  padding: 0;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  background: rgb(236, 233, 233);
 }
-.box2 {
-  position: relative;
-  width: 200px;
-  background: green;
-  box-shadow: 5px 5px 5px grey;
-}
-h3 {
-  color: #fff;
-  padding: 5px;
-  font-size: 1.5rem;
-  font-weight: 500;
+.box h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10px;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.text {
+  height: 100%;
+  width: 70%;
+  padding: 10px;
+}
+.text .wrap {
+  font-size: 1.2;
+  font-weight: 400;
+  padding: 5px;
+  text-align: left;
 }
 
 @media only screen and (max-width: 767px) {
@@ -217,47 +205,6 @@ h3 {
     text-align: center;
     color: rgb(45, 206, 131);
     text-transform: uppercase;
-  }
-  .row {
-    position: relative;
-  }
-  .col-md-2 {
-    display: flex;
-    justify-content: center;
-  }
-  .col-md-2 img {
-    width: 150px;
-    height: 120px;
-    padding: 20px;
-    margin-top: -30px;
-  }
-  .col-md-10 {
-    position: relative;
-  }
-  .box {
-    width: 150px;
-    background: green;
-    box-shadow: 5px 5px 5px grey;
-    margin-left: 32%;
-    margin-bottom: 10px;
-  }
-  .box2 {
-    width: 200px;
-    background: green;
-    box-shadow: 5px 5px 5px grey;
-    margin-left: 25%;
-  }
-  .text {
-    display: flex;
-    justify-content: center;
-  }
-
-  .box h3 {
-    color: #fff;
-    padding: 5px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-align: center;
   }
 }
 </style>

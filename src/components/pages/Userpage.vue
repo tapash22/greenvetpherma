@@ -1,5 +1,4 @@
 <template>
-  <Details />
   <Navigation />
     <div class="row">
       <div class="col-md-12">
@@ -18,13 +17,11 @@
 </template>
 
 <script>
-import Details from "../../services/Details.vue";
 import Navigation from "../../services/Navigation.vue";
 import Foot from "../../services/Footer.vue";
 
 export default {
   components: {
-    Details,
     Navigation,
     Foot,
   },
@@ -35,7 +32,7 @@ export default {
 
 .row {
   padding: 0;
-  margin: 0;
+  background: rgb(236, 233, 233);
 }
 .col-md-12 {
   padding: 0;

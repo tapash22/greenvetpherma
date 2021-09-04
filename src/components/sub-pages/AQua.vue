@@ -78,8 +78,8 @@ export default {
 <style scoped>
 
 h2 {
-  margin-top: 150px;
-  padding: 20px;
+  margin-top: 100px;
+  padding: 10px;
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;

@@ -65,11 +65,12 @@ export default {
   justify-content: center;
 }
 .col-md-6 {
-  margin-top: 150px;
+  margin-top: 100px;
   width: 600px;
   height: 350px;
   box-shadow: 2px 2px 5px blue;
   text-align: left;
+  background: #fff;
 }
 h2 {
   color: #000;

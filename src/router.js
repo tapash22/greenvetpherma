@@ -7,6 +7,9 @@ import Gallary from './components/pages/Gallary.vue';
 import Partners from './components/pages/Partners.vue';
 import Login from './components/pages/Login.vue';
 import Admin from './components/pages/Admin.vue';
+import Servicespage from './components/pages/Servicespage.vue';
+import Demo from './components/sub-pages/Demo.vue';
+import Contactus from './components/pages/Contactus.vue';
 
 
 import AQua from './components/sub-pages/AQua.vue';
@@ -34,11 +37,11 @@ const routes = [
         children: [
             { path: 'home', component: Home },
             { path: 'about', component: About },
-            {
-                path: 'products', component: Products, },
+            { path: 'products', component: Products, },
             { path: 'gallary', component: Gallary },
             { path: 'partners', component: Partners },
             { path: 'login', component: Login },
+            { path: 'servicespage' , component: Servicespage },
 
             { path: 'aqua', component: AQua },
             { path: 'others', component: Others },
@@ -46,6 +49,8 @@ const routes = [
             { path: 'poultry', component: Poultry },
             { path: 'ruminent', component: Ruminent },
             { path: 'vetClinic', component: VetClinic },
+            { path: 'demo', component: Demo },
+            { path: 'contactus', component: Contactus },
         ]
     },
 

@@ -18,7 +18,8 @@
     "vue-easy-lightbox": "^1.2.1",
     "vue-router": "^4.0.10",
     "vue3-apexcharts": "^1.4.0",
-    "vue3-carousel": "^0.1.25"
+    "vue3-carousel": "^0.1.25",
+    "webviewer-downloader": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

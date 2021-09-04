@@ -1,24 +1,30 @@
 <template>
-  <Carousel :items-to-show="3" :autoplay="2000" :wrap-around="true">
-    <Slide v-for="slide in products" :key="slide.id">
-      <router-link :to="slide.url">
-        <div class="card">
-          <i :class="slide.icon" />
-          <p>{{ slide.title }}</p>
-        </div>
-      </router-link>
-    </Slide>
-    <template #addons>
-      <Navigation />
-    </template>
-  </Carousel>
+  <div class="servicespage">
+    <h2>Our Services</h2>
+    <div
+      class="row"
+      data-aos="zoom-in"
+      data-aos-delay="500"
+      data-aos-once="false"
+    >
+      <div
+        class="col-md-3 my-2"
+        v-for="(pdc, index) in products"
+        :key="pdc.id"
+        :index="index"
+      >
+        <router-link :to="pdc.url">
+          <div class="box">
+            <i :class="pdc.icon" />
+            <h3>{{ pdc.title }}</h3>
+          </div>
+        </router-link>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import { Carousel, Navigation, Slide } from "vue3-carousel";
-
-import "vue3-carousel/dist/carousel.css";
-
 export default {
   data() {
     return {
@@ -27,114 +33,125 @@ export default {
           id: 1,
           title: "Technology Analysis",
           icon: "fa fa-cc-discover",
-          url: "/demo",
+          url: "",
           des: "technology review and assessment, target disease applications, and manufacturing feasibility ",
         },
         {
           id: 2,
           title: "Business Development",
           icon: "fa fa-briefcase",
-          url: "/demo",
+          url: "",
           des: "licensing strategy, negotiations, due diligence, contract guidance, and financial modeling",
         },
         {
           id: 3,
           title: "Market Analysis",
           icon: "fa fa-map-marker",
-          url: "/demo",
+          url: "",
           des: "market research, attribute mapping, price elasticity analysis, and market forecasting",
         },
         {
           id: 4,
           title: "Regulatory Guidance",
           icon: "fa fa-quora",
-          url: "/demo",
+          url: "",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
         },
         {
           id: 5,
           title: "Products",
           icon: "fa fa-product-hunt",
-          url: "/demo",
+          url: "",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
         },
         {
           id: 6,
           title: "Vet-Clinic",
           icon: "fa fa-hospital-o",
-          url: "/demo",
+          url: "",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
         },
         {
           id: 7,
           title: "E-Magazine",
           icon: "fa fa-book",
-          url: "/demo",
+          url: "",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
         },
         {
           id: 8,
           title: "communications",
           icon: "fa fa-handshake-o",
-          url: "/demo",
+          url: "",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
         },
       ],
     };
   },
-
-  components: {
-    Carousel,
-    Slide,
-    Navigation,
+  mounted() {
+    window.scrollTo(0, 0);
   },
 };
 </script>
 <style scoped>
-a{
-  text-decoration: none;
+h2 {
+  margin-top: 100px;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+ 
+  text-transform: uppercase;
 }
-.card {
+.row {
+  justify-content: center;
+  align-items: center;
+}
+.col-md-3 {
+  justify-content: center;
   width: 300px;
-  height: 200px;
-  padding: 20px;
-  margin: 0;
-  cursor: pointer;
+  height: 220px;
 }
-.card i {
-  margin-top: 30px;
-  font-size: 4rem;
-  font-weight: 900;
+.col-md-3 a {
+  text-decoration: none;
   color: #000;
 }
-.card p {
-  font-size: 1.3rem;
+.box {
+  background: #fff;
+  width: 250px;
+  height: 200px;
+  margin: 5px 10px;
+}
+.box i{
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+h3 {
+  font-size: 1.2rem;
   font-weight: 500;
   color: #000;
+  text-transform: uppercase;
+  text-align: center;
   padding: 10px;
 }
 
+
 @media only screen and (max-width: 767px) {
-  .card {
-    width: 100%;
-    height: 100px;
-    padding: 0;
-    background: #fff;
-  }
-  .card img {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-  }
-  .card p {
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: "Oswald", sans-serif;
-    color: #fff;
+  h2 {
+    margin-top: 190px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
     text-align: center;
-    margin-top: -20%;
-    z-index: 1;
+    color: rgb(45, 206, 131);
     text-transform: uppercase;
+  }
+  .col-md-4 {
+    margin-left: 10%;
   }
 }
 </style>

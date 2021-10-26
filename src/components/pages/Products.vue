@@ -162,20 +162,22 @@ h2 {
   padding: 10px;
   margin: 0;
 }
-.card .cad-body{
+.card .card-body{
   width: 100%;
   height: 70%;
   padding: 0;
   margin: 0;
+  border: none;
 }
-.card .cad-body img{
-  width: 100%;
+.card .card-body img{
+  width: 290px;
   height: 100%;
   padding: 0;
   margin: 0;
 }
 .card .card-footer{
   width: 100%;
+  border: none;
 }
 
 @media only screen and (max-width: 767px) {

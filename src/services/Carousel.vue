@@ -100,18 +100,20 @@ a{
   padding: 20px;
   margin: 0;
   cursor: pointer;
+  background: rgb(44, 186, 252);
 }
 .card i {
   margin-top: 30px;
   font-size: 4rem;
   font-weight: 900;
-  color: #000;
+  color: rgb(3, 112, 3);
 }
 .card p {
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: #000;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #fff;
   padding: 10px;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 767px) {

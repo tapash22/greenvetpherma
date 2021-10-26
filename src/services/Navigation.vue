@@ -52,7 +52,7 @@ nav {
   height: 100px;
   padding: 0;
   margin: 0;
-  background: #fff;
+  background: rgb(49, 31, 83);
   display: flex;
   flex-direction: space-evenly;
   box-shadow: 2px 2px 5px rgb(255, 255, 255);
@@ -82,7 +82,7 @@ nav ul li {
 nav ul li a {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 nav ul li a:hover,
@@ -91,10 +91,12 @@ nav ul li a:hover,
 }
 ul li:hover span{
     display: block;
+    padding: 0;
+    margin: 0;
 }
 span{
     width: 200px;
-    height: 240px;
+    height: 300px;
     position: absolute;
     top: 80px;
     display: none;
@@ -108,23 +110,30 @@ span ul{
   flex-direction: column;
   padding: 0;
   margin: 0;
+  background: rgb(62, 38, 105);
 }
 span li{
     width: 100%;
-    height: 30px;
+    height: 40px;
     cursor: pointer;
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 span li a{
   text-decoration: none;
   color: #fff;
   font-size: 1.3rem;
   font-weight: 500;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 span li:hover {
-  background: rgba(0, 0, 0, 0.479);
+  /* margin-left: -1px; */
+  background:rgba(0, 0, 0, 0.493);
 }
 </style>

@@ -100,7 +100,6 @@ h2 {
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
- 
   text-transform: uppercase;
 }
 .row {
@@ -117,23 +116,25 @@ h2 {
   color: #000;
 }
 .box {
-  background: #fff;
+   background: rgb(44, 186, 252);
   width: 250px;
   height: 200px;
   margin: 5px 10px;
+  border-radius: 10px;
 }
 .box i{
   font-size: 3.5rem;
   font-weight: 700;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  color: #fff;
+  padding-top: 25%;
 }
 
-h3 {
+.box h3 {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
   padding: 10px;

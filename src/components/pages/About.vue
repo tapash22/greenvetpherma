@@ -3,7 +3,7 @@
     <h2>About Us</h2>
     <div
       class="row my-2"
-      data-aos="fade-left"
+      data-aos="fade-up"
       data-aos-delay="500"
       data-aos-once="false"
     >
@@ -31,7 +31,7 @@
 
     <div
       class="row my-2"
-      data-aos="fade-left"
+      data-aos="fade-up"
       data-aos-delay="500"
       data-aos-once="false"
     >
@@ -56,7 +56,7 @@
     <div
       class="row my-2"
       data-aos="fade-left"
-      data-aos-delay="500"
+      data-aos-delay="300"
       data-aos-once="false"
     >
       <div class="col-md-2">
@@ -83,7 +83,7 @@
     <div
       class="row my-2"
       data-aos="fade-left"
-      data-aos-delay="300"
+      data-aos-delay="200"
       data-aos-once="false"
     >
       <div class="col-md-2">
@@ -104,9 +104,9 @@
       </div>
     </div>
     <div
-      class="row my-2"
+      class="row my-3"
       data-aos="fade-left"
-      data-aos-delay="300"
+      data-aos-delay="100"
       data-aos-once="false"
     >
       <div class="col-md-2">
@@ -147,24 +147,26 @@ h2 {
   text-transform: uppercase;
 }
 .row {
-  padding: 10px;
+  padding: 0;
   margin: 10px;
   width: 100%;
+  height: 200px;
   background: #fff;
   display: flex;
 }
 .col-md-2 {
   width: 20%;
   height: 100%;
-  padding: 10px;
+  padding: 20px;
 }
 .col-md-2 img {
   width: 200px;
-  height: 150px;
-  padding: 10px;
+  height: 160px;
+  padding: 20px;
 }
 .col-md-10 {
-  padding: 10px;
+  padding: 0;
+  margin: 0;
   height: 100%;
   width: 80%;
   display: flex;
@@ -172,17 +174,20 @@ h2 {
 .box {
   width: 30%;
   padding: 0;
-  margin-top: 5%;
-  margin-bottom: 10%;
-  background: rgb(236, 233, 233);
+  margin: 0;
+  background: rgb(255, 255, 255);
 }
 .box h3 {
   font-size: 2rem;
   font-weight: 700;
   padding: 10px;
+  margin-top: 27%;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border-radius: 10px;
+  background: rgb(44, 186, 252);
+  color: #fff;
 }
 .text {
   height: 100%;
@@ -191,9 +196,9 @@ h2 {
 }
 .text .wrap {
   font-size: 1.2;
-  font-weight: 400;
-  padding: 5px;
-  text-align: left;
+  font-weight: 500;
+  padding: 20px;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 767px) {

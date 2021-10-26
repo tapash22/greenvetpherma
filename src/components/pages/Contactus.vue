@@ -19,10 +19,19 @@
       </div>
     </div>
     <div class="image">
-      <img src="../../assets/image/final.jpg" />
+      <ComponentwithMap/>
     </div>
   </div>
 </template>
+
+<script>
+import ComponentwithMap from '../../services/ComponentwithMap.vue';
+export default {
+  components:{
+    ComponentwithMap,
+  }
+}
+</script>
 
 <style scoped>
 .contactus {
@@ -38,7 +47,7 @@
   margin-top: 100px;
 }
 .row .col-md-12 {
-  padding: 5px;
+  padding: 0;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -46,40 +55,47 @@
 .box {
   display: flex;
   justify-content: center;
-  background: #fff;
+  background: rgb(13, 132, 141);
+     border-left: 1px solid goldenrod;
+  border-right: 1px solid goldenrod;
 }
 .box .b {
   padding: 10px;
   margin: 10px;
+
 }
 .box h3 {
   font-size: 1.8rem;
   font-weight: 700;
   padding: 5px;
   text-transform: uppercase;
+  color: #fff;
 }
 .box ul {
   padding: 5px;
   margin: 0;
   display: block;
   justify-content: center;
+ 
 }
 .box ul li {
   list-style: none;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
   padding: 2px;
+  color: #fff;
 }
 .box h3 i {
   font-size: 1.8rem;
   font-weight: 700;
   padding: 5px;
   margin-left: -40px;
+  
 }
 .image {
   padding: 0;
   width: 100%;
-  height: 650px;
+  height: 500px;
   margin: 0;
 }
 .image img {

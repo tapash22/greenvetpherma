@@ -65,7 +65,7 @@
         <h3>Head Office</h3>
         <ul>
           <li>
-            <i class="fa fa-home" aria-hidden="true"></i>House: 66,&nbsp;Road:
+            <i class="fa fa-home" aria-hidden="true"></i>House No: 66,&nbsp;Road No:
             11,
           </li>
           <li>DIT,&nbsp;Merul-Badda</li>
@@ -76,7 +76,8 @@
       </div>
     </div>
     <div class="col-md-12">
-      <p class="ref">All right reserve in &copy; 𝕌𝕝𝕥𝕣𝕒𝕎𝕒𝕧𝕖</p>
+      <p class="ref">All right reserve in &copy; GreenVetPharma</p>
+      <p class="brand">Deveoped By<br>ULTRAWAVE COMMUNICATIONS</p>
     </div>
   </div>
 </template>
@@ -84,7 +85,7 @@
 <style scoped>
 .footer {
   width: 100%;
-  background: rgb(243, 181, 9);
+ background: rgb(62, 38, 105);
   padding: 0;
   margin: 0;
 }
@@ -124,6 +125,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: green;
+
 }
 .icons ul i:hover
 {
@@ -145,6 +147,14 @@
   font-weight: 500;
   color: #fff;
 }
+.address h3{
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
 .address ul{
   padding: 10px;
   margin: 0;
@@ -155,24 +165,37 @@
   font-size: 1rem;
   font-weight: 500;
   padding: 2px;
+  color: #fff;
 }
 .address ul li i{
   font-size: 1.8rem;
   font-weight: 700;
   color:green;
   padding: 5px;
-  margin-left: -30px;
+  margin-left: -10px;
 }
 .col-md-12{
   width: 100%;
   height: 100%;
   padding: 5px;
+  background: #000;
 }
 .col-md-12 .ref{
   font-size: 0.9rem;
   font-weight: 500;
   color: rgb(167, 145, 123);
   text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.brand{
+  margin-top: -100px;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #ff4500;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 @media only screen and (max-width: 767px) {

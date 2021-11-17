@@ -4,7 +4,7 @@
       <div class="col-md-12">
         <router-view v-slot="{ Component }">
           <transition
-            enter-active-class="animate__animated animate__fadeInDown animate__fast	50ms "
+            enter-active-class="animate__animated animate__fadeInUp animate__fast	50ms "
             leave-active-class="animate__animated animate__fadeOutDown animate__fast 50ms"
             mode="out-in"
           >

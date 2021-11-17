@@ -8,45 +8,21 @@
       <div class="row">
         <div class="col-md-12">
           <p>We are delivery best products</p>
-          <div class="product" v-for="product in products" :key="product.id">
-            <div class="card">
-              <div class="card-body">
-                <router-link :to="product.url">
-                <img :src="product.img"/>
-                </router-link>
-              </div>
-              <div class="card-footer">
-                <p>{{product.title}}</p>
+          <div class="row product">
+            <div class="col-md-4" v-for="product in products" :key="product.id">
+              <div class="card">
+                <div class="card-body">
+                  <img :src="product.img" />
+                </div>
+                <div class="card-footer">
+                  <p>{{ product.title }}</p>
+                  <router-link :to="product.url">Details</router-link>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- <div
-        class="row"
-        data-aos="zoom-in"
-        data-aos-delay="500"
-        data-aos-once="false"
-      >
-        <div
-          class="col-md-4 my-2"
-          v-for="(pdc, index) in products"
-          :key="pdc.id"
-          :index="index"
-        >
-          <router-link :to="pdc.url">
-            <div class="box">
-              <div class="header">
-                <h3>{{ pdc.title }}</h3>
-              </div>
-              <img :src="pdc.img" />
-              <div class="footer">
-                <button class="btn btn-primary">Details</button>
-              </div>
-            </div>
-          </router-link>
-        </div>
-      </div> -->
     </div>
   </div>
 </template>
@@ -84,14 +60,8 @@ export default {
           url: "/petanimal",
         },
         {
-          id: 5,
-          title: "Vet Clinic",
-          img: "https://i.postimg.cc/pX2JM4bK/e.jpg",
-          url: "/vetClinic",
-        },
-        {
           id: 6,
-          title: "Others",
+          title: "Ex-clusive",
           img: "https://i.postimg.cc/NjF85X0M/f.jpg",
           url: "/others",
         },
@@ -107,8 +77,9 @@ export default {
 <style scoped>
 .products {
   width: 100%;
-  height: 100%;
-  padding: 10%;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
   margin: 0;
   position: relative;
 }
@@ -138,7 +109,6 @@ h2 {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
 }
 .col-md-12 p {
   text-align: center;
@@ -149,35 +119,61 @@ h2 {
   background: rgb(44, 186, 252);
   border-radius: 10px;
 }
-.col-md-12 .product{
+.col-md-12 .product {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: left;
+}
+.col-md-12 .product .col-md-4 {
+  width: 33%;
+  padding: 5px;
+  margin: 0;
+}
+.product .card {
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  margin: 10px;
+}
+.card .card-body {
+  width: 100%;
+  height: 260px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.card .card-body img {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  margin: 0;
+}
+.card .card-footer {
   width: 100%;
   height: auto;
-  padding: 10px;
-  margin: 0;
-}
-
-.product .card{
-  width: 30%;
-  height: 300px;
-  padding: 10px;
-  margin: 0;
-}
-.card .card-body{
-  width: 100%;
-  height: 70%;
-  padding: 0;
-  margin: 0;
   border: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  background: black;
 }
-.card .card-body img{
-  width: 290px;
-  height: 100%;
+.card-footer p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: left;
+  background: #000;
   padding: 0;
   margin: 0;
 }
-.card .card-footer{
-  width: 100%;
-  border: none;
+.card-footer a{
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(44, 186, 252);
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 767px) {

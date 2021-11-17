@@ -7,27 +7,26 @@
       <ul>
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/servicespage">Our Services</router-link></li>
-        <li><router-link to="/products">Veterinary Products</router-link>
-         <span>
+        <li><router-link to="/gallery">Gallery</router-link></li>
+        <li><router-link to="/services">Services</router-link></li>
+        <li>
+          <router-link to="/products">Veterinary Products</router-link>
+          <span>
             <ul>
               <li>
                 <router-link to="/demo">Poultry</router-link>
               </li>
               <li>
-                <router-link to="/demo">Ruminent</router-link>
+                <router-link to="/demo">Cattle</router-link>
               </li>
               <li>
                 <router-link to="/demo">Aqua</router-link>
               </li>
               <li>
-                <router-link to="/demo">VetClinic</router-link>
-              </li>
-              <li>
                 <router-link to="/demo">Petanimal</router-link>
               </li>
               <li>
-                <router-link to="/demo">Others</router-link>
+                <router-link to="/others">Ex-clusive</router-link>
               </li>
             </ul>
           </span>
@@ -71,12 +70,12 @@ nav a img {
 
 nav ul {
   padding: 0;
-  margin-top: 30px;
+  margin-top: 40px;
   display: flex;
 }
 nav ul li {
   padding: 0;
-  margin: 5px;
+  margin: 0;
   list-style: none;
 }
 nav ul li a {
@@ -86,54 +85,54 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li a:hover,
- a.router-link-exact-active {
+a.router-link-exact-active {
   color: green;
 }
-ul li:hover span{
-    display: block;
-    padding: 0;
-    margin: 0;
+ul li:hover span {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
-span{
-    width: 200px;
-    height: 300px;
-    position: absolute;
-    top: 80px;
-    display: none;
-    z-index: 1;
-    background: #fff;
-   padding: 0;
-   margin: 0;
+span {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  display: none;
+  top: 80px;
+  z-index: 1;
+  background: #fff;
+  padding: 0;
+  margin:0;
 }
-span ul{
+span ul {
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
-  background: rgb(62, 38, 105);
+  background: rgb(49, 31, 83);;
 }
-span li{
-    width: 100%;
-    height: 40px;
-    cursor: pointer;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+span li {
+  width: 100%;
+  height:50px;
+  cursor: pointer;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
-span li a{
+span li a {
   text-decoration: none;
   color: #fff;
   font-size: 1.3rem;
   font-weight: 500;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   text-align: center;
 }
 
 span li:hover {
   /* margin-left: -1px; */
-  background:rgba(0, 0, 0, 0.493);
+  background: rgba(0, 0, 0, 0.493);
 }
 </style>

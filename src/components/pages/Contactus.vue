@@ -18,18 +18,14 @@
         </div>
       </div>
     </div>
-    <div class="image">
-      <ComponentwithMap/>
-    </div>
+  
   </div>
 </template>
 
 <script>
-import ComponentwithMap from '../../services/ComponentwithMap.vue';
+
 export default {
-  components:{
-    ComponentwithMap,
-  }
+ 
 }
 </script>
 
@@ -55,7 +51,7 @@ export default {
 .box {
   display: flex;
   justify-content: center;
-  background: rgb(13, 132, 141);
+  background: #fff;
      border-left: 1px solid goldenrod;
   border-right: 1px solid goldenrod;
 }
@@ -69,7 +65,7 @@ export default {
   font-weight: 700;
   padding: 5px;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
 }
 .box ul {
   padding: 5px;
@@ -83,7 +79,7 @@ export default {
   font-size: 1.2rem;
   font-weight: 600;
   padding: 2px;
-  color: #fff;
+  color: #000;
 }
 .box h3 i {
   font-size: 1.8rem;
@@ -92,12 +88,7 @@ export default {
   margin-left: -40px;
   
 }
-.image {
-  padding: 0;
-  width: 100%;
-  height: 500px;
-  margin: 0;
-}
+
 .image img {
   width: 100%;
   height: 100%;

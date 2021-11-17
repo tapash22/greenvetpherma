@@ -10,6 +10,7 @@ import Admin from './components/pages/Admin.vue';
 import Servicespage from './components/pages/Servicespage.vue';
 import Demo from './components/sub-pages/Demo.vue';
 import Contactus from './components/pages/Contactus.vue';
+import SingleProduct from './services/SingleProduct.vue';
 
 
 import AQua from './components/sub-pages/AQua.vue';
@@ -38,18 +39,20 @@ const routes = [
             { path: 'home', component: Home },
             { path: 'about', component: About },
             { path: 'products', component: Products, },
-            { path: 'gallary', component: Gallary },
+            { path: 'gallery', component: Gallary },
             { path: 'partners', component: Partners },
             { path: 'login', component: Login },
-            { path: 'servicespage' , component: Servicespage },
+            { path: 'services' , component: Servicespage },
 
             { path: 'aqua', component: AQua },
-            { path: 'others', component: Others },
+            
             { path: 'petanimal', component: PetAnimal },
             { path: 'poultry', component: Poultry },
             { path: 'ruminent', component: Ruminent },
             { path: 'vetClinic', component: VetClinic },
             { path: 'demo', component: Demo },
+            { path: 'others', component: Others },
+            { path: 'others/:id',name:'SingleProduct', component: SingleProduct },
             { path: 'contactus', component: Contactus },
         ]
     },

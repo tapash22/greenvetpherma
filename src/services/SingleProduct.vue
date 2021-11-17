@@ -1,28 +1,25 @@
 <template>
-  <div class="demos">
+  <div class="singleproduct">
     <div class="image">
-      <img src="../../assets/image/product.jpg" />
+      <img src="../assets/image/home.jpg" />
     </div>
     <div class="container">
-      <h2>Product List</h2>
+      <h2>Product Detail</h2>
       <div class="row">
         <div class="col-md-12">
-          <p>We are delivery best products</p>
-          <div class="row product">
-            <div class="col-md-4" v-for="product in products" :key="product.id">
-              <div class="card">
-                <div class="card-body">
-                  <img :src="product.data().image" />
-                </div>
-                <div class="card-footer">
-                  <p>{{ product.data().product_title }}</p>
-                  <router-link
-                    :to="{ name: 'SingleProduct', params: { id: product.id } }"
-                    >Details</router-link
-                  >
-                </div>
+          <p>We serve best product for you::{{product.product_title}}</p>
+          <div class="box">
+              <div class="image">
+                  <img :src="product.image"/>
               </div>
-            </div>
+              <div class="text">
+                  <ul>
+                  <li>{{prouct.product_title}}</li>
+                  <li>{{product.link}}</li>
+                  <li> {{product.pdf}}</li>
+                  </ul>
+                  <p>{{product.descripsion}}</p>
+              </div>
           </div>
         </div>
       </div>
@@ -31,32 +28,35 @@
 </template>
 
 <script>
-import { db } from "../../firebase";
+import { db } from "../firebase";
 export default {
+  name:'SingleProduct',
   data() {
     return {
-      products: [],
-      
-      active_item: null,
+      id: this.$route.params.id,
+      product: [],
     };
   },
+
   created() {
-    db.collection("products")
-      .get()
-      .then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          // doc.data() is never undefined for query doc snapshots
-          this.products.push(doc);
-        });
-      });
+    var docRef = db.collection("products").doc(this.id);
+    docRef.get().then((doc) => {
+      if (doc.exists) {
+        this.product = doc.data();
+      } else {
+        console.log("No such document!");
+      }
+    });
   },
+
   mounted() {
     window.scrollTo(0, 0);
   },
 };
 </script>
+
 <style scoped>
-.demos {
+.singleproduct {
   width: 100%;
   padding-top: 10%;
   padding-right: 10%;
@@ -64,12 +64,12 @@ export default {
   margin: 0;
   position: relative;
 }
-.demos .image {
+.singleproduct .image {
   width: 100%;
   height: 400px;
   margin-top: -5%;
 }
-.demos .image img {
+.singleproduct .image img {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -158,6 +158,4 @@ h2 {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 767px) {
-}
 </style>

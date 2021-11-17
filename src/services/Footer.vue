@@ -2,7 +2,7 @@
   <div class="footer">
     <div class="row">
       <div class="col-md-3 brand">
-        <img src="../assets/image/logo.png" />
+        <img src="../assets/image/footer.png" />
       </div>
       <div class="col-md-3 icons">
         <ul>
@@ -53,6 +53,7 @@
         <ul>
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">About</router-link></li>
+          <li><router-link to="/gallery">Gallery</router-link></li>
           <li><router-link to="/products">Our Services</router-link></li>
           <li><router-link to="/">Veterinary Products</router-link></li>
           <li><router-link to="/partners">Partners</router-link></li>
@@ -97,13 +98,13 @@
 }
 
 .row .col-md-3{
-  padding: 10px;
+  padding: 5px;
   margin: 0;
 }
 .brand img{
   width: 100%;
-  height: 140px;
-  padding-top: 40px;
+  height: 100%;
+  padding-top: 10px;
   background-position: center;
 }
 .icons ul{
@@ -143,7 +144,7 @@
 }
 .quicklink ul li a{
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #fff;
 }

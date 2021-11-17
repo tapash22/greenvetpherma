@@ -3,7 +3,7 @@
     <h2>Our Services</h2>
     <div
       class="row"
-      data-aos="zoom-in"
+      data-aos="fade-up"
       data-aos-delay="500"
       data-aos-once="false"
     >

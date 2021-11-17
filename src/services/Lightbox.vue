@@ -37,12 +37,10 @@ export default {
       visible: false,
       index: 0, // default: 0
       imgs: [
-        "https://i.postimg.cc/ZYgNpczH/1.jpg",
-        "https://i.postimg.cc/4N9959Jg/2.jpg",
-        "https://i.postimg.cc/W1mJRcFY/1d.jpg",
-        "https://i.postimg.cc/xjWRnY89/2d.jpg",
-        "https://i.postimg.cc/y8zmfD0w/company.jpg",
-        "https://i.postimg.cc/FR13f3QJ/partner.png",
+        "https://i.postimg.cc/KYzMp3rv/IMG-20180116-193351.jpg",
+        "https://i.postimg.cc/wvRsgKGC/IMG-20180117-134234.jpg",
+        "https://i.postimg.cc/L4B8f6Ly/IMG-20180116-191934.jpg",
+        "https://i.postimg.cc/T1y0zHV1/IMG-20180117-134229.jpg",
       ],
     };
   },

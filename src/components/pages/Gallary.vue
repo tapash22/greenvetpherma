@@ -3,14 +3,6 @@
     <h2>gallery</h2>
     <div class="row">
       <Lightbox />
-      <!-- <div class="col-md-6" v-for="img in images" :key="img">
-        <div class="card">
-          <img :src="img" />
-          <div class="card-footer">
-            <a href="#"><i class="fa fa-search-plus"></i></a>
-          </div>
-        </div>
-      </div> -->
     </div>
   </div>
 </template>
@@ -33,7 +25,7 @@ export default {
   height: 100%;
 }
 h2 {
-  margin-top: 150px;
+  margin-top: 120px;
   padding-top: 10px;
   font-size: 1.5rem;
   font-weight: 700;

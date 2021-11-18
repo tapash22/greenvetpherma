@@ -20,10 +20,6 @@ export default {
 </script>
         
 <style scoped>
-.container {
-  width: 100%;
-  height: 100%;
-}
 h2 {
   margin-top: 120px;
   padding-top: 10px;
@@ -32,6 +28,14 @@ h2 {
   text-align: center;
   color: rgb(45, 206, 131);
   text-transform: uppercase;
+}
+.row{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 759px) {

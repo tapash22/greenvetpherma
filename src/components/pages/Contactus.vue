@@ -4,14 +4,16 @@
       <div class="row">
         <div class="col-md-12">
           <div class="box">
-            <div class="b">
-              <h3><i class="fa fa-home" aria-hidden="true"></i> Head Office</h3>
+            <h3><i class="fa fa-home" aria-hidden="true"></i>GreenVetPharma</h3>
+            <div class="box2">      
               <ul>
                 <li>House: 66,&nbsp;Road: 11,</li>
                 <li>DIT,&nbsp;Merul-Badda</li>
                 <li>Dhaka,&nbsp; Bangladesh</li>
-                <li>+8801917114636</li>
-                <li>info@GreenVetPharma.bd.com</li>
+                </ul>
+                <ul>
+                <li>Mobile : +8801917114636</li>
+                <li>Email : info@GreenVetPharma.bd.com</li>
               </ul>
             </div>
           </div>
@@ -43,56 +45,48 @@ export default {
   margin-top: 100px;
 }
 .row .col-md-12 {
+  width: 100%;
+  height: 100%;
   padding: 0;
   margin: 5px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 .box {
-  display: flex;
-  justify-content: center;
+  width: 80%;
+  height: 100%;
   background: #fff;
-     border-left: 1px solid goldenrod;
-  border-right: 1px solid goldenrod;
-}
-.box .b {
-  padding: 10px;
-  margin: 10px;
-
 }
 .box h3 {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 900;
   padding: 5px;
-  text-transform: uppercase;
+  margin: 5px;
   color: #000;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-.box ul {
-  padding: 5px;
-  margin: 0;
-  display: block;
-  justify-content: center;
- 
-}
-.box ul li {
-  list-style: none;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 2px;
-  color: #000;
-}
-.box h3 i {
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding: 5px;
-  margin-left: -40px;
-  
-}
-
-.image img {
+.box .box2{
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 5px;
   margin: 0;
 }
+.box2 ul{
+  padding: 10px;
+  margin: 0;
+  display: block;
+}
+.box2 ul  li{
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: justify;
+  color: #000;
+   font-family: 'Roboto Condensed', sans-serif;
+   list-style: none;
+
+}
+
 </style>

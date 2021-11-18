@@ -14,7 +14,7 @@
 
       <!-- all props & events -->
       <vue-easy-lightbox
-        style="margin-top:10%;"
+        style="margin-top:5%;"
         :visible="visible"
         :imgs="imgs"
         :index="index"
@@ -78,12 +78,11 @@ export default {
   border: 1px solid blue;
 }
 .col-md-4 .card{
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     padding: 10px;
-    margin: 10px;
+    margin: 0;
 }
-
 .col-md-4 img {
   width: 100%;
   height: 100%;

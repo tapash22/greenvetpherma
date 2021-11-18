@@ -13,7 +13,7 @@
         <h2>Benefits From Us</h2>
         <div class="col-md-12">
           <div class="text">
-            <p>
+            <p class="wrap">
               Developing products for veterinary medicine can have several
               advantages for human pharmaceutical companies, including
               generating revenues through licensing and/or commercialization and
@@ -25,6 +25,7 @@
           </div>
         </div>
       </div>
+
       <div class="row count">
         <div class="plot">
           <h5>Veterinary Market Research & Technology Analysis</h5>
@@ -166,6 +167,7 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster&family=Poppins:wght@100;500&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
 
 .home {
   margin-top: 0;
@@ -211,29 +213,60 @@ export default {
   font-family: "Oswald", sans-serif;
 }
 .products .col-md-12 {
-  padding: 10px;
-  margin: 10px;
-  width: 100%;
-  background: rgb(44, 186, 252);
-}
-.products .col-md-12 .text {
-  padding: 20px;
-  margin: 5px;
-  width: 100%;
-  height: 100%;
-}
-.products .col-md-12 .text p {
-  font-size: 1.3rem;
-  font-weight: 900;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  text-align: justify;
-}
-.count {
   padding: 0;
   margin: 0;
   width: 100%;
-  margin-left: 15px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-12 .text {
+    width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: 5px;
+      background: rgb(44, 186, 252);
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+}
+.products .col-md-12 .text::before{
+  
+  content: '\201F';
+  font-size: 2rem;
+  font-weight: 900;
+  padding: auto;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+ .text .wrap {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+ font-family: 'Roboto Condensed', sans-serif;
+  text-align: justify;
+  color: #000;
+}
+.products .col-md-12 .text::after{
+  content: '\201E';
+  font-size: 2rem;
+  font-weight: 900;
+  background: rgb(44, 186, 252);
+  padding: auto;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.count {
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 .count .plot {
   box-shadow: 2px 2px 4px #fff;

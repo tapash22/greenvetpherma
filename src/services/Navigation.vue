@@ -53,63 +53,72 @@ nav {
   margin: 0;
   background: rgb(49, 31, 83);
   display: flex;
-  flex-direction: space-evenly;
   box-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 nav a {
+  width: 30%;
+  height: 100%;
   padding: 5px;
-  margin-left: 20px;
-  height: 100px;
+  margin:0;
+  display: flex;
+  justify-content: center;
 }
 nav a img {
   width: 100%;
   height: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 5px;
+  margin: 5px;
 }
 
 nav ul {
-  padding: 0;
-  margin-top: 40px;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  margin: 10px;
   display: flex;
+  justify-content: center;
 }
-nav ul li {
-  padding: 0;
-  margin: 0;
+ul li{
+  padding: 5px;
+  margin: 5px;
+  height: 100%;
   list-style: none;
 }
-nav ul li a {
+ul li a{
+  text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
   color: #fff;
-  text-decoration: none;
+  display: inline;
 }
+
 nav ul li a:hover,
 a.router-link-exact-active {
   color: green;
 }
 ul li:hover span {
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-span {
-  width: 200px;
-  height: auto;
-  position: absolute;
-  display: none;
-  top: 80px;
-  z-index: 1;
-  background: #fff;
-  padding: 0;
-  margin:0;
-}
-span ul {
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
-  background: rgb(49, 31, 83);;
+}
+ul li span {
+  width: 12%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  padding: 10px;
+  margin: 0;
+}
+span ul {
+ display: block;
+  padding: 0;
+  margin:0;
+  width: 100%;
+  height: 100%;
 }
 span li {
   width: 100%;
@@ -120,19 +129,19 @@ span li {
   margin: 0;
   display: flex;
   justify-content: center;
+  background: rgb(49, 31, 83);
 }
 span li a {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
   text-decoration: none;
   color: #fff;
-  font-size: 1.3rem;
-  font-weight: 500;
-  padding: 10px;
-  margin: 0;
-  text-align: center;
 }
 
-span li:hover {
+span li:hover a {
   /* margin-left: -1px; */
-  background: rgba(0, 0, 0, 0.493);
+  background: rgba(0, 0, 0, 0.568);
+  color: #fff;
 }
 </style>

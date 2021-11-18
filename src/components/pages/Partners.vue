@@ -149,7 +149,7 @@ h2 {
 }
 .card-body img:hover {
   display: block;
-  transform: translateY(-15%);
+  transform: translateY(-20%);
 }
 .card-footer ul {
   display: flex;

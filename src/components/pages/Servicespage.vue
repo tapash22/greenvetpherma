@@ -3,9 +3,6 @@
     <h2>Our Services</h2>
     <div
       class="row"
-      data-aos="fade-up"
-      data-aos-delay="500"
-      data-aos-once="false"
     >
       <div
         class="col-md-3 my-2"
@@ -103,23 +100,34 @@ h2 {
   text-transform: uppercase;
 }
 .row {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  display: flex;
   justify-content: center;
-  align-items: center;
 }
 .col-md-3 {
+  width: 24%;
+  height: 100%;
+  padding:5px;
+  margin: 5px;
+  display: flex;
   justify-content: center;
-  width: 300px;
-  height: 220px;
 }
 .col-md-3 a {
   text-decoration: none;
-  color: #000;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
-.box {
+.col-md-3 a .box {
    background: rgb(44, 186, 252);
-  width: 250px;
-  height: 200px;
-  margin: 5px 10px;
+  width: 90%;
+  height: 100%;
   border-radius: 10px;
 }
 .box i{
@@ -128,7 +136,7 @@ h2 {
   display: flex;
   justify-content: center;
   color: #fff;
-  padding-top: 25%;
+  padding-top: 10%;
 }
 
 .box h3 {

@@ -38,6 +38,8 @@ export default {
     };
   },
 
+
+
   created() {
     var docRef = db.collection("products").doc(this.id);
     docRef.get().then((doc) => {
@@ -62,7 +64,6 @@ export default {
   padding-right: 10%;
   padding-left: 10%;
   margin: 0;
-  position: relative;
 }
 .singleproduct .image {
   width: 100%;

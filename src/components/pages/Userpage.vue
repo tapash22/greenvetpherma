@@ -1,18 +1,18 @@
 <template>
   <Navigation />
-    <div class="row">
-      <div class="col-md-12">
-        <router-view v-slot="{ Component }">
-          <transition
-            enter-active-class="animate__animated animate__fadeInUp animate__fast	50ms "
-            leave-active-class="animate__animated animate__fadeOutDown animate__fast 50ms"
-            mode="out-in"
-          >
-            <component :is="Component" />
-          </transition>
-        </router-view>
-      </div>
+  <div class="row">
+    <div class="col-md-12">
+      <router-view v-slot="{ Component }">
+        <transition
+          enter-active-class="animate__animated animate__fadeInDown animate__fast	50ms "
+          leave-active-class="animate__animated animate__fadeOutDown animate__fast 50ms"
+          mode="out-in"
+        >
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </div>
+  </div>
   <Foot />
 </template>
 
@@ -29,10 +29,11 @@ export default {
 </script>
 
 <style scoped>
-
 .row {
   padding: 0;
   background: rgb(236, 233, 233);
+  width: 100%;
+  height: 100%;
 }
 .col-md-12 {
   padding: 0;

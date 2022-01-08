@@ -1,12 +1,12 @@
 <template>
-<div class="map">
-  <GMapMap :center="center" :zoom="5" map-type-id="terrain" style="width: 100vw; height: 500px">
+
+  <GMapMap :center="center" :zoom="5" map-type-id="terrain" style="width: 100vw; height: 20rem">
     <GMapCluster :zoomOnClick="true">
       <GMapMarker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true" :draggable="true"
         @click="center = m.position" />
     </GMapCluster>
   </GMapMap>
-</div>
+
 </template>
 
 <script>
@@ -45,11 +45,8 @@
 </script>
 
 <style>
-  .map {
+  body {
     margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 500px;
   }
 .center{
   color: black;

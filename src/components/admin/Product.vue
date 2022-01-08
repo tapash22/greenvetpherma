@@ -10,7 +10,7 @@
               class="form-control"
               type="text"
               placeholder="Event Name .."
-              v-model="product.product_title"
+              v-model="product.product_name"
             />
           </div>
           <div class="form-group">
@@ -19,19 +19,24 @@
               class="form-control"
               type="text"
               placeholder="Event Name .."
-              v-model="product.link"
+              v-model="product.company_name"
+            />
+          </div>
+          <div class="form-group">
+            <label>For</label>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Event Name .."
+              v-model="product.pet_name"
             />
           </div>
           <div class="form-group">
             <label>Description</label>
             <textarea
               class="form-control"
-              v-model="product.descripsion"
+              v-model="product.description"
             ></textarea>
-          </div>
-          <div class="form-group my-4 upload">
-            <label>Upload Pdf</label>
-            <input class="form-control" type="file" @change="uploadPdf" />
           </div>
           <div class="form-group my-4 upload">
             <label>Upload Image</label>
@@ -57,19 +62,19 @@
             <thead>
               <tr>
                 <th>Product name</th>
-                <th>Company Link</th>
+                <th>Company name</th>
+                <th>Pet Name</th>
                 <th>Description</th>
-                <th>Pdf</th>
                 <th>Image</th>
                 <th>Modify</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="product in products" :key="product.id">
-                <td>{{ product.data().product_title }}</td>
-                <td>{{ product.data().link }}</td>
-                <td>{{ product.data().descripsion }}</td>
-                <td>{{ product.data().pdf }}</td>
+                <td>{{ product.data().product_name }}</td>
+                <td>{{ product.data().company_name }}</td>
+                <td>{{ product.data().pet_name }}</td>
+                <td>{{ product.data().description }}</td>
                 <td>{{ product.data().image }}</td>
                 <td>
                   <button
@@ -113,28 +118,33 @@
                 class="form-control"
                 type="text"
                 placeholder="Event Name .."
-                v-model="product.product_title"
+                v-model="product.product_name"
               />
             </div>
             <div class="form-group">
-              <label>Company Link</label>
+              <label>Company Name</label>
               <input
                 class="form-control"
                 type="text"
                 placeholder="Event Name .."
-                v-model="product.link"
+                v-model="product.company_name"
+              />
+            </div>
+            <div class="form-group">
+              <label>For</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Event Name .."
+                v-model="product.pet_name"
               />
             </div>
             <div class="form-group">
               <label>Description</label>
               <textarea
                 class="form-control"
-                v-model="product.descripsion"
+                v-model="product.description"
               ></textarea>
-            </div>
-            <div class="form-group my-4 upload">
-              <label>Upload Pdf</label>
-              <input type="file" @change="uploadPdf" />
             </div>
             <div class="form-group my-4 upload">
               <label>Upload Image</label>
@@ -174,10 +184,10 @@ export default {
       showModal: false,
       products: [],
       product: {
-        product_title: "",
-        link: "",
-        descripsion: "",
-        pdf: "",
+        product_name: "",
+        company_name: "",
+        pet_name: "",
+        description: "",
         image: "",
       },
       active_item: null,

@@ -14,7 +14,7 @@
 
       <!-- all props & events -->
       <vue-easy-lightbox
-        style="margin-top:5%;"
+        style="margin-top:10%;"
         :visible="visible"
         :imgs="imgs"
         :index="index"
@@ -37,10 +37,12 @@ export default {
       visible: false,
       index: 0, // default: 0
       imgs: [
-        "https://i.postimg.cc/KYzMp3rv/IMG-20180116-193351.jpg",
-        "https://i.postimg.cc/wvRsgKGC/IMG-20180117-134234.jpg",
-        "https://i.postimg.cc/L4B8f6Ly/IMG-20180116-191934.jpg",
-        "https://i.postimg.cc/T1y0zHV1/IMG-20180117-134229.jpg",
+        "https://i.postimg.cc/ZYgNpczH/1.jpg",
+        "https://i.postimg.cc/4N9959Jg/2.jpg",
+        "https://i.postimg.cc/W1mJRcFY/1d.jpg",
+        "https://i.postimg.cc/xjWRnY89/2d.jpg",
+        "https://i.postimg.cc/y8zmfD0w/company.jpg",
+        "https://i.postimg.cc/FR13f3QJ/partner.png",
       ],
     };
   },
@@ -78,11 +80,12 @@ export default {
   border: 1px solid blue;
 }
 .col-md-4 .card{
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 200px;
     padding: 10px;
-    margin: 0;
+    margin: 10px;
 }
+
 .col-md-4 img {
   width: 100%;
   height: 100%;

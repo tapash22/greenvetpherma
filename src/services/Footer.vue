@@ -2,7 +2,8 @@
   <div class="footer">
     <div class="row">
       <div class="col-md-3 brand">
-        <img src="../assets/image/footer.png" />
+        <img src="../assets/image/uv.png" />
+        <p class="ref">&copy; ultrawave.digital</p>
       </div>
       <div class="col-md-3 icons">
         <ul>
@@ -35,7 +36,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="https://www.facebook.com/greenvetpharma/"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
               title="https://www.facebook.com/greenvetpharma/"
@@ -53,40 +54,37 @@
         <ul>
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">About</router-link></li>
-          <li><router-link to="/gallery">Gallery</router-link></li>
           <li><router-link to="/products">Our Services</router-link></li>
           <li><router-link to="/">Veterinary Products</router-link></li>
           <li><router-link to="/partners">Partners</router-link></li>
           <li><router-link to="/">Contact Us</router-link></li>
-           <li><router-link to="/login">Login</router-link></li>
-
+          <li><router-link to="/login">Login</router-link></li>
         </ul>
       </div>
       <div class="col-md-3 address">
         <h3>Head Office</h3>
         <ul>
           <li>
-            <i class="fa fa-home" aria-hidden="true"></i>House No: 66,&nbsp;Road No:
+            <i class="fa fa-home" aria-hidden="true"></i>House: 66,&nbsp;Road:
             11,
           </li>
           <li>DIT,&nbsp;Merul-Badda</li>
           <li>Dhaka,&nbsp; Bangladesh</li>
           <li>+8801917114636</li>
-          <li>info@GreenVetPharma.bd.com</li>
+          <li>info@greenvetbd.com</li>
         </ul>
       </div>
     </div>
-    <div class="col-md-12">
-      <p class="ref">All right reserve in &copy; GreenVetPharma</p>
-      <p class="brand">Deveoped By<br>ULTRAWAVE COMMUNICATIONS</p>
-    </div>
+    <!-- <div class="col-md-12">
+      <p class="ref">All right reserve in &copy; 𝕌𝕝𝕥𝕣𝕒𝕎𝕒𝕧𝕖</p>
+    </div> -->
   </div>
 </template>
 
 <style scoped>
 .footer {
   width: 100%;
- background: rgb(62, 38, 105);
+  background: #12c3f3;
   padding: 0;
   margin: 0;
 }
@@ -97,106 +95,102 @@
   margin: 0;
 }
 
-.row .col-md-3{
-  padding: 5px;
+.row .col-md-3 {
+  padding: 10px;
   margin: 0;
 }
-.brand img{
-  width: 100%;
-  height: 100%;
-  padding-top: 10px;
+.brand img {
+  width: 450px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
   background-position: center;
 }
-.icons ul{
+.brand p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-top: -40px;
+  margin-left: -40px;
+}
+.icons ul {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-
 }
-.icons ul li{
-  margin: 5px;
+.icons ul li {
+  margin: auto;
   list-style: none;
   width: 40px;
   height: 40px;
-  padding: 10px;
+  padding: auto;
   background: #fff;
   border-radius: 50%;
 }
-.icons ul li a i{
+.icons ul li a i {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 900;
   color: green;
-
+  margin: 4px;
+  padding: 5px;
 }
-.icons ul i:hover
-{
- color: #000;
+.icons ul i:hover {
+  color: #000;
 }
-.quicklink ul{
+.quicklink ul {
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin: 0;
 }
-.quicklink ul li{
+.quicklink ul li {
   margin: 2px;
   list-style: none;
 }
-.quicklink ul li a{
+.quicklink ul li a {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  color: #fff;
+  color: #000;
 }
-.address h3{
+.address h3 {
   font-size: 1.8rem;
-  font-weight: 900;
-  color: #fff;
-  text-align: left;
+  font-weight: 700;
+  color: #000;
   text-transform: uppercase;
-  padding-top: 10px;
 }
-.address ul{
+.address ul {
   padding: 10px;
   margin: 0;
   display: block;
 }
-.address ul li{
+.address ul li {
   list-style: none;
   font-size: 1rem;
   font-weight: 500;
   padding: 2px;
-  color: #fff;
+  color: #000;
 }
-.address ul li i{
+.address ul li i {
   font-size: 1.8rem;
   font-weight: 700;
-  color:green;
+  color: green;
   padding: 5px;
-  margin-left: -10px;
+  margin-left: -30px;
 }
-.col-md-12{
+.col-md-12 {
   width: 100%;
   height: 100%;
   padding: 5px;
-  background: #000;
 }
-.col-md-12 .ref{
+.col-md-12 .ref {
   font-size: 0.9rem;
   font-weight: 500;
-  color: rgb(167, 145, 123);
+  color: #fff;
   text-align: center;
-  padding: 0;
-  margin: 0;
-}
-.brand{
-  margin-top: -100px;
-  font-size: 0.6rem;
-  font-weight: 500;
-  color: #ff4500;
-  text-align: center;
-  padding: 0;
-  margin: 0;
 }
 
 @media only screen and (max-width: 767px) {

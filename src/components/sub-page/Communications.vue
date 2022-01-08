@@ -3,7 +3,11 @@
     <div class="row">
       <div class="col-md-12">
         <div class="box">
-          <img src="../../assets/image/contact.png" />
+          <h3>We provide communication support to the values of client.</h3>
+          <p>
+            For more details, please contact<br />
+            info@greenvetbd.com
+          </p>
         </div>
       </div>
     </div>
@@ -25,14 +29,23 @@
   margin: 0;
 }
 .col-md-12 .box {
-  padding: 5px;
+  background: rgb(24, 192, 214);
+  padding: 10px;
   margin: 10px;
   box-shadow: 2px 2px 5px #12c3f3;
-  display: flex;
-  justify-content: center;
 }
-.col-md-12 .box img {
-  width: 100%;
-  height: 100%;
+.box h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+  text-align: center;
+}
+.box p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+  text-align: center;
 }
 </style>

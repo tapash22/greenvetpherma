@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="box">
-          <img src="../../assets/image/contact.png" />
+          <img src="../../assets/image/comming.png" />
         </div>
       </div>
     </div>

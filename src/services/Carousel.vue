@@ -53,7 +53,7 @@ export default {
         },
         {
           id: 5,
-          title: "Products",
+          title: "Veterinary Products",
           icon: "fa fa-product-hunt",
           url: "/demo",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
@@ -91,7 +91,7 @@ export default {
 };
 </script>
 <style scoped>
-a{
+a {
   text-decoration: none;
 }
 .card {
@@ -100,20 +100,18 @@ a{
   padding: 20px;
   margin: 0;
   cursor: pointer;
-  background: rgb(44, 186, 252);
 }
 .card i {
   margin-top: 30px;
   font-size: 4rem;
   font-weight: 900;
-  color: rgb(3, 112, 3);
+  color: #000;
 }
 .card p {
-  font-size: 1.1rem;
-  font-weight: 900;
-  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #000;
   padding: 10px;
-  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 767px) {

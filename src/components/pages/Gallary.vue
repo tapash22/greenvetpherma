@@ -3,14 +3,22 @@
     <h2>gallery</h2>
     <div class="row">
       <Lightbox />
+      <!-- <div class="col-md-6" v-for="img in images" :key="img">
+        <div class="card">
+          <img :src="img" />
+          <div class="card-footer">
+            <a href="#"><i class="fa fa-search-plus"></i></a>
+          </div>
+        </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
-import Lightbox from '../../services/Lightbox.vue';
+import Lightbox from "../../services/Lightbox.vue";
 export default {
-  components:{
+  components: {
     Lightbox,
   },
   mounted() {
@@ -29,14 +37,6 @@ h2 {
   color: rgb(45, 206, 131);
   text-transform: uppercase;
 }
-.row{
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
 
 @media screen and (max-width: 759px) {
   h2 {
@@ -48,6 +48,5 @@ h2 {
     color: rgb(45, 206, 131);
     text-transform: uppercase;
   }
-  
 }
 </style>

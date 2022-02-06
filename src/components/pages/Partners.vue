@@ -4,6 +4,7 @@
       <div class="row">
         <h2>Our partners</h2>
         <div class="col-md-4" v-for="blog in blogs" :key="blog.id">
+          <a :href="blog.url">
           <div class="card">
             <div class="card-body">
               <img :src="blog.img" />
@@ -11,10 +12,10 @@
             <div class="card-footer">
               <ul>
                 <li>{{ blog.author }}</li>
-                <li>{{ blog.intro }}</li>
               </ul>
             </div>
           </div>
+          </a>
         </div>
       </div>
     </div>
@@ -28,44 +29,53 @@ export default {
       blogs: [
         {
           id: "1",
-          author: "Catalyst",
-          place: "Bangladesh",
-          resion: "good",
-          img: require("../../assets/image/cata.png"),
-          intro: "Works from 2019",
-        },
-        {
-          id: "2",
           author: "Farmavet International",
           place: "Bangladesh",
           resion: "good",
           img: require("../../assets/image/far.png"),
-          intro: "Works from 2016",
+          url:"https://www.farmavet.com.tr/en/"
+        },
+        {
+          id: "2",
+          author: "Provet",
+          place: "Bangladesh",
+          resion: "good",
+          img: require("../../assets/image/provet.jpg"),
+          url:"https://www.provet.in/"
         },
         {
           id: "3",
-          author: "BioBax Solutions",
+          author: "Catalyst",
           place: "Bangladesh",
           resion: "good",
-          img: require("../../assets/image/bbs.png"),
-          intro: "Works from 2015",
+          img: require("../../assets/image/cata.png"),
+          url:"https://www.catalystlifesciences.in/"
         },
         {
           id: "4",
-          author: "Suvishal Biotech",
-          place: "Bangladesh",
+          author: "Bio Bax Solutions",
+          place: "india",
           resion: "good",
-          img: require("../../assets/image/svb.png"),
-          intro: "Works from 2015",
+          img: require("../../assets/image/bbs.png"),
+          url:""
         },
         {
           id: "5",
-          author: "Truevet animal nutrition",
-          place: "Bangladesh",
+          author: "True Vet",
+          place: "India",
           resion: "good",
           img: require("../../assets/image/tvet.png"),
-          intro: "Works from 2015",
+          url:""
         },
+        {
+          id: "6",
+          author: "Suvishal Biotech",
+          place: "India",
+          resion: "good",
+          img: require("../../assets/image/svb.png"),
+          url:"",
+        },
+
       ],
     };
   },
@@ -98,6 +108,12 @@ h2 {
   height: 100%;
   padding: 10px;
   margin: 15px;
+}
+.row .col-md-4 a{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-decoration: none;
 }
 .card {
   padding: 0;

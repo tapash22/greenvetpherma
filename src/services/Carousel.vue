@@ -3,8 +3,11 @@
     <Slide v-for="slide in products" :key="slide.id">
       <router-link :to="slide.url">
         <div class="card">
-          <i :class="slide.icon" />
-          <p>{{ slide.title }}</p>
+          <div class="image">
+            <img :src="slide.img"/>
+          </div>
+          <!-- <i :class="slide.icon" /> -->
+          <!-- <p>{{ slide.title }}</p> -->
         </div>
       </router-link>
     </Slide>
@@ -26,57 +29,57 @@ export default {
         {
           id: 1,
           title: "Technology Analysis",
-          icon: "fa fa-cc-discover",
-          url: "/demo",
+          img: require('../assets/image1/technology analysis.jpg'),
+          url: "/technology",
           des: "technology review and assessment, target disease applications, and manufacturing feasibility ",
         },
         {
           id: 2,
           title: "Business Development",
-          icon: "fa fa-briefcase",
-          url: "/demo",
+          img: require('../assets/image1/business development.jpg'),
+          url: "/emagazine",
           des: "licensing strategy, negotiations, due diligence, contract guidance, and financial modeling",
         },
         {
           id: 3,
           title: "Market Analysis",
-          icon: "fa fa-map-marker",
-          url: "/demo",
+          img: require('../assets/image1/Market analysis.jpg'),
+          url: "/marketanalysis",
           des: "market research, attribute mapping, price elasticity analysis, and market forecasting",
         },
         {
           id: 4,
           title: "Regulatory Guidance",
-          icon: "fa fa-quora",
-          url: "/demo",
+          img: require('../assets/image1/Regulatory Guidance.jpg'),
+          url: "/emagazine",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
         },
         {
           id: 5,
           title: "Veterinary Products",
-          icon: "fa fa-product-hunt",
-          url: "/demo",
+          img: require('../assets/image1/Veterinary Products.jpg'),
+          url: "/products",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
         },
         {
           id: 6,
           title: "Vet-Clinic",
-          icon: "fa fa-hospital-o",
-          url: "/demo",
+          img: require('../assets/image1/Vet Clinic.jpg'),
+          url: "/vetclinic",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
         },
         {
           id: 7,
           title: "E-Magazine",
-          icon: "fa fa-book",
-          url: "/demo",
+          img: require('../assets/image1/E Magazine.jpg'),
+          url: "/emagazine",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
         },
         {
           id: 8,
           title: "communications",
-          icon: "fa fa-handshake-o",
-          url: "/demo",
+          img: require('../assets/image1/communication.jpg'),
+          url: "/communications",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
         },
       ],
@@ -96,22 +99,43 @@ a {
 }
 .card {
   width: 300px;
-  height: 200px;
+  height: 300px;
   padding: 20px;
   margin: 0;
   cursor: pointer;
+  border-radius: 20px;
+  background: none;
+  border: none;
 }
-.card i {
+/* .card i {
   margin-top: 30px;
   font-size: 4rem;
   font-weight: 900;
   color: #000;
+} */
+.card .image{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  border: 2px solid green;
+    box-shadow: 0 0 20px green;
+}
+.card .image img{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 .card p {
+  height: 15%;
   font-size: 1.3rem;
   font-weight: 500;
   color: #000;
-  padding: 10px;
+  padding: 5px;
+  margin: 0;
 }
 
 @media only screen and (max-width: 767px) {

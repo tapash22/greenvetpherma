@@ -1,26 +1,14 @@
 <template>
   <div class="container">
     <h2>About Us</h2>
-    <div
-      class="row my-2"
-      data-aos="fade-left"
-      data-aos-delay="500"
-      data-aos-once="false"
-    >
-      <div class="col-md-2">
-        <img src="../../assets/image/h.png" />
-      </div>
-
-      <div class="col-md-10">
+    <div class="row my-2">
+      <div class="col-md-12">
         <div class="text">
           <p class="wrap">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            ratione dicta veritatis ab cupiditate consequatur quis modi harum at
-            quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
-            in tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eius ratione dicta veritatis ab cupiditate consequatur quis modi
-            harum at quos reiciendis, illum optio ipsam pariatur inventore
-            nostrum nobis in tempora.
+            We introduce ourselves as one of the most eminent suppliers of
+            premium quality range of cattle and poultry products as medicines,
+            vaccines and feed supplements. We also provide Veterinary
+            instruments, poultry feeders, and drinkers.
           </p>
         </div>
       </div>
@@ -28,95 +16,24 @@
 
     <div
       class="row my-2"
-      data-aos="fade-left"
+      data-aos="fade-up"
       data-aos-delay="500"
       data-aos-once="false"
     >
       <div class="col-md-2">
-        <img src="../../assets/image/m.png" />
+        <img src="../../assets/image/v.png" />
       </div>
 
       <div class="col-md-10">
         <div class="text">
           <p class="wrap">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            ratione dicta veritatis ab cupiditate consequatur quis modi harum at
-            quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
-            in tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eius ratione dicta veritatis ab cupiditate consequatur quis modi
-            harum at quos reiciendis, illum optio ipsam pariatur inventore
-            nostrum nobis in tempora.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="row my-2"
-      data-aos="fade-left"
-      data-aos-delay="500"
-      data-aos-once="false"
-    >
-      <div class="col-md-2">
-        <transition name="img">
-          <img src="../../assets/image/v.png" />
-        </transition>
-      </div>
-      <div class="col-md-10">
-        <div class="text">
-          <p class="wrap">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            ratione dicta veritatis ab cupiditate consequatur quis modi harum at
-            quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
-            in tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eius ratione dicta veritatis ab cupiditate consequatur quis modi
-            harum at quos reiciendis, illum optio ipsam pariatur inventore
-            nostrum nobis in tempora.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="row my-2"
-      data-aos="fade-left"
-      data-aos-delay="300"
-      data-aos-once="false"
-    >
-      <div class="col-md-2">
-        <img src="../../assets/image/a.png" />
-      </div>
-      <div class="col-md-10">
-        <div class="text">
-          <p class="wrap">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            ratione dicta veritatis ab cupiditate consequatur quis modi harum at
-            quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
-            in tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eius ratione dicta veritatis ab cupiditate consequatur quis modi
-            harum at quos reiciendis, illum optio ipsam pariatur inventore
-            nostrum nobis in tempora.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="row my-2"
-      data-aos="fade-left"
-      data-aos-delay="300"
-      data-aos-once="false"
-    >
-      <div class="col-md-2">
-        <img src="../../assets/image/u.png" />
-      </div>
-      <div class="col-md-10">
-        <div class="text">
-          <p class="wrap">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            ratione dicta veritatis ab cupiditate consequatur quis modi harum at
-            quos reiciendis, illum optio ipsam pariatur inventore nostrum nobis
-            in tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eius ratione dicta veritatis ab cupiditate consequatur quis modi
-            harum at quos reiciendis, illum optio ipsam pariatur inventore
-            nostrum nobis in tempora.
+            Our vision is to be a leading service provider company by providing
+            high quality & affordable medicine for healthier lives.We visualize
+            ourselves to be a highly respected pharma marketing company to grow
+            by innovating technologies updating know how and maintaining highly
+            ethical standards in business operation ensuring benefit to society
+            at large.Our purpose is to provide affordable and innovative
+            medicine at affordable price.
           </p>
         </div>
       </div>
@@ -150,35 +67,47 @@ h2 {
   background: #fff;
   display: flex;
 }
+.row .col-md-12{
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.644);
+}
+.row .col-md-12 .text .wrap {
+  padding: 30px;
+  margin: 5px;
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+}
 .col-md-2 {
   width: 30%;
   height: 100%;
   padding: 10px;
 }
 .col-md-2 img {
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 300px;
   padding: 10px;
 }
 .col-md-10 {
-  padding: 10px;
+  padding: 0;
+  margin: 0;
   height: 100%;
   width: 70%;
   display: flex;
 }
-.text {
+.col-md-10 .text {
   height: 100%;
   width: 100%;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
 }
-.text .wrap {
+ .text .wrap {
   font-size: 1.2;
   font-weight: 700;
   font-family: "Roboto Slab", serif;
   letter-spacing: 1px;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
   text-align: justify;
 }
 

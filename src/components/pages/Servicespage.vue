@@ -77,14 +77,14 @@ export default {
         {
           id: 7,
           title: "Market Analysis",
-          icon: "fa fa-map-marker",
+          icon: "fa fa-line-chart",
           url: "/marketanalysis",
           des: "market research, attribute mapping, price elasticity analysis, and market forecasting",
         },
         {
           id: 8,
           title: "Regulatory Guidance",
-          icon: "fa fa-quora",
+          icon: "fa fa-bandcamp",
           url: "/emagazine",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
         },
@@ -125,6 +125,12 @@ h2 {
   width: 250px;
   height: 200px;
   margin: 5px 10px;
+  transform: scale(1);
+  transition: 0.3s transform ease-out;
+}
+.box:hover{
+    transform: scale(1.04);
+  transition: 0.4s transform ease-out;
 }
 .box i {
   font-size: 3.5rem;
@@ -132,6 +138,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  color: green;
 }
 
 h3 {

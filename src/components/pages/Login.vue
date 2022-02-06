@@ -87,7 +87,8 @@ h2 {
   justify-content: center;
 }
 .button {
-  text-align: left;
+ 
+text-align: left;
 }
 label {
   font-size: 1.5rem;

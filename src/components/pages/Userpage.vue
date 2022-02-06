@@ -31,6 +31,7 @@ export default {
 <style scoped>
 .row {
   padding: 0;
+  margin: 0;
   background: rgb(236, 233, 233);
   width: 100%;
   height: 100%;

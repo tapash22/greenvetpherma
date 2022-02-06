@@ -8,22 +8,20 @@
       <Carousel />
 
       <div class="row products my-3">
-        <h2>Benefits From Us</h2>
+        <h2>Who we are ?</h2>
         <div class="col-md-12">
           <div class="text">
             <p>
-              Developing products for veterinary medicine can have several
-              advantages for human pharmaceutical companies, including
-              generating revenues through licensing and/or commercialization and
-              validating outcomes in comparative diseases to people. Our team
-              can provide guidance on entering animal health and veterinary
-              medicine, and developing a development strategy in translational
-              medicine.
+              Since 2015, our veterinary consultants have been assisting clients
+              with entering the veterinary and animal health market. Our
+              veterinary consulting team has industry, clinical, academic, and
+              start-up experience; allowing us to be efficient and effective.
             </p>
           </div>
         </div>
       </div>
       <div class="row count">
+        <h2>What we do ?</h2>
         <div class="plot">
           <h5>Veterinary Market Research & Technology Analysis</h5>
           <p>
@@ -71,7 +69,7 @@
         </div>
       </div>
 
-      <div class="row faq my-3">
+      <!-- <div class="row faq my-3">
         <h2>FAQ</h2>
         <ul class="nav nav-tabs nav-justified">
           <li class="nav-item">
@@ -134,7 +132,7 @@
             omnis doloribus?
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -166,7 +164,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 .home {
-  margin-top: 100px;
+  margin-top: 130px;
   padding: 0;
   width: 100%;
   height: auto;
@@ -178,12 +176,13 @@ export default {
   margin: 0;
 }
 .row .image {
-  background-image: url("../../assets/image/home.jpg");
+  background-image: url("../../assets/image/home1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 500px;
+  padding: 0;
 }
 .container {
   width: 100%;
@@ -204,18 +203,20 @@ export default {
   padding: 0;
   margin: 0;
   width: 100%;
+    
 }
 .products .col-md-12 .text {
   padding: 10px;
   margin: 5px;
-  background: rgb(24, 192, 214);
+  border: 2px solid green;
+  box-shadow: 0 0 20px green;
 }
 .products .col-md-12 .text p {
   font-size: 1.2rem;
   font-weight: 700;
   font-family: "Roboto Slab", serif;
   text-align: justify;
-  color: #fff;
+  color: #000;
   padding: 10px;
 }
 .count {
@@ -229,7 +230,14 @@ export default {
   height: 100%;
   padding: 10px;
   margin: 10px;
-  background: #fff;
+  border: 2px solid green;
+  /* box-shadow: 0 0 20px green; */
+  transition: 0.4s transform ease-out;
+}
+.count .plot:hover{
+  box-shadow: 0 0 20px green;
+  transition: 0.5s transform ease-out;
+  cursor: pointer;
 }
 
 .count .plot h5 {
@@ -248,6 +256,7 @@ export default {
   color: #000;
   text-align: justify;
   padding: 5px;
+  margin: 0;
 }
 .faq {
   padding: 0;

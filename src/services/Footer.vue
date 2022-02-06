@@ -1,90 +1,67 @@
 <template>
   <div class="footer">
     <div class="row">
-      <div class="col-md-3 brand">
-        <img src="../assets/image/uv.png" />
-        <p class="ref">&copy; ultrawave.digital</p>
-      </div>
-      <div class="col-md-3 icons">
+      <div class="col-md 4 services">
+        <h3>Provided Services</h3>
         <ul>
+          <li><router-link to="/servicespage">Our Services</router-link></li>
           <li>
-            <a
-              href="#"
-              data-bs-toggle="tooltip"
-              data-bs-placement="bottom"
-              title="info@GreenVetPharma.bd.com"
-              ><i class="fa fa-envelope-o"></i
-            ></a>
+            <router-link to="/products">Veterinary Products</router-link>
           </li>
-          <li>
-            <a
-              href="#"
-              data-bs-toggle="tooltip"
-              data-bs-placement="left"
-              title="+8801917114636"
-              ><i class="fa fa-mobile"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              title="fax"
-              ><i class="fa fa-fax"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/greenvetpharma/"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="https://www.facebook.com/greenvetpharma/"
-              ><i class="fa fa-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#" data-bs-toggle="tooltip" title="Tooltip on top"
-              ><i class="fa fa-linkedin" aria-hidden="true"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md 3 quicklink">
-        <ul>
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/about">About</router-link></li>
-          <li><router-link to="/products">Our Services</router-link></li>
-          <li><router-link to="/">Veterinary Products</router-link></li>
           <li><router-link to="/partners">Partners</router-link></li>
-          <li><router-link to="/">Contact Us</router-link></li>
           <li><router-link to="/login">Login</router-link></li>
         </ul>
       </div>
-      <div class="col-md-3 address">
-        <h3>Head Office</h3>
+      <div class="col-md-4">
+        <h3>Find Location</h3>
         <ul>
-          <li>
-            <i class="fa fa-home" aria-hidden="true"></i>House: 66,&nbsp;Road:
-            11,
-          </li>
+          <li>House: 66,&nbsp;Road:11,</li>
           <li>DIT,&nbsp;Merul-Badda</li>
           <li>Dhaka,&nbsp; Bangladesh</li>
           <li>+8801917114636</li>
-          <li>info@greenvetbd.com</li>
+          <li style="margin-left: -30px">greenvetpharma@gmail.com</li>
+        </ul>
+      </div>
+      <div class="col-md-4 icons">
+        <ul>
+          <li>
+            <a
+              href=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="left"
+              title="+8801917114636"
+              ><i class="fa fa-whatsapp" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/greenvetpharma/"
+              ><i class="fa fa-facebook-square" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+            ></a>
+          </li>
         </ul>
       </div>
     </div>
-    <!-- <div class="col-md-12">
-      <p class="ref">All right reserve in &copy; 𝕌𝕝𝕥𝕣𝕒𝕎𝕒𝕧𝕖</p>
-    </div> -->
+    <div class="row">
+      <div class="col-md-12">
+        <p>All right reserved in &copy; Ultrawave.digital</p>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .footer {
   width: 100%;
-  background: #12c3f3;
+  /* background: rgba(81, 241, 169, 0.959); */
+  background: rgba(182, 238, 213, 0.959);
   padding: 0;
   margin: 0;
 }
@@ -94,103 +71,121 @@
   padding: 0;
   margin: 0;
 }
-
-.row .col-md-3 {
+.row .col-md-4 {
   padding: 10px;
   margin: 0;
-}
-.brand img {
-  width: 450px;
-  height: 300px;
-  padding: 0;
-  margin: 0;
-  background-position: center;
-}
-.brand p {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #fff;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  margin-top: -40px;
-  margin-left: -40px;
-}
-.icons ul {
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-}
-.icons ul li {
-  margin: auto;
-  list-style: none;
-  width: 40px;
-  height: 40px;
-  padding: auto;
-  background: #fff;
-  border-radius: 50%;
-}
-.icons ul li a i {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: green;
-  margin: 4px;
-  padding: 5px;
-}
-.icons ul i:hover {
-  color: #000;
-}
-.quicklink ul {
+  width: 30%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin: 0;
+  justify-content: center;
 }
-.quicklink ul li {
+.services h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+  text-align: left;
+  padding: 10px;
+  margin-left: 40px;
+  color: #000;
+}
+.services ul {
+  display: block;
+  padding: 5px;
+  margin-left: 50px;
+  width: 100%;
+  height: 100%;
+}
+.services ul li {
+  display: flex;
+  justify-content: left;
+  padding: 2px;
   margin: 2px;
   list-style: none;
 }
-.quicklink ul li a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
+.services ul li a {
+  font-size: 1.3rem;
+  font-weight: 600;
   color: #000;
+  font-family: "Roboto Slab", serif;
 }
-.address h3 {
+.col-md-4 h3 {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #000;
-  text-transform: uppercase;
-}
-.address ul {
   padding: 10px;
   margin: 0;
-  display: block;
+  font-family: "Roboto Slab", serif;
 }
-.address ul li {
+.col-md-4 ul {
+  padding: 10px;
+  margin: 5px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.col-md-4 ul li {
   list-style: none;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
   padding: 2px;
   color: #000;
+  display: flex;
+  justify-content: left;
+  font-family: "Roboto Slab", serif;
 }
-.address ul li i {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: green;
+
+.icons ul {
+  padding: 70px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.icons ul li {
+  list-style: none;
   padding: 5px;
-  margin-left: -30px;
+  margin: 5px;
+  color: #000;
+  display: flex;
+  justify-content: left;
 }
-.col-md-12 {
+.icons ul li a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.icons ul li a i {
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding: 5px;
+  margin: 0;
+  color: #000;
+  transition: 0.3s transform ease-out;
+}
+.icons ul li a i:hover {
+  transform: rotateZ(-25deg);
+  transition: 0.4s border ease-out;
+}
+
+.row .col-md-12 {
   width: 100%;
   height: 100%;
   padding: 5px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 0 10px #a0d9ef;
 }
-.col-md-12 .ref {
-  font-size: 0.9rem;
+.col-md-12 p {
+  font-size: 0.8rem;
   font-weight: 500;
-  color: #fff;
-  text-align: center;
+  color: #000;
 }
 
 @media only screen and (max-width: 767px) {

@@ -30,8 +30,8 @@
   height: 130px;
   padding: 0;
   margin: 0;
-  background: #fff;
-  box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  background: rgba(182, 238, 213, 0.959);
+  box-shadow: 0 0 20px #a0d9ef;
 }
 nav a {
   height: 100%;
@@ -62,10 +62,11 @@ nav ul li a {
   font-weight: 500;
   color: #000;
   text-decoration: none;
+  border-bottom: 2px solid none;
 }
 nav ul li a:hover,
 a.router-link-exact-active {
-  color: green;
+  border-bottom: 2px solid green;
 }
 ul li:hover span {
   display: block;

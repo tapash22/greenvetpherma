@@ -65,7 +65,7 @@ export default {
           place: "India",
           resion: "good",
           img: require("../../assets/image/tvet.png"),
-          url:""
+          url:"https://www.truevet.bio/"
         },
         {
           id: "6",

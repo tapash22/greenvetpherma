@@ -6,8 +6,7 @@
           <div class="image">
             <img :src="slide.img"/>
           </div>
-          <!-- <i :class="slide.icon" /> -->
-          <!-- <p>{{ slide.title }}</p> -->
+          <p>{{ slide.id }}</p>
         </div>
       </router-link>
     </Slide>
@@ -100,12 +99,13 @@ a {
 .card {
   width: 300px;
   height: 300px;
-  padding: 20px;
+  padding: 5px;
   margin: 0;
   cursor: pointer;
-  border-radius: 20px;
-  background: none;
+  border-radius: 5px;
+  background: #fff;
   border: none;
+  display: block;
 }
 /* .card i {
   margin-top: 30px;
@@ -115,13 +115,11 @@ a {
 } */
 .card .image{
   width: 100%;
-  height: 100%;
+  height: 90%;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  border: 2px solid green;
-    box-shadow: 0 0 20px green;
 }
 .card .image img{
   width: 100%;
@@ -130,7 +128,8 @@ a {
   margin: 0;
 }
 .card p {
-  height: 15%;
+  width: 100%;
+  height: 10%;
   font-size: 1.3rem;
   font-weight: 500;
   color: #000;

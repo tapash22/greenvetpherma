@@ -3,10 +3,10 @@
     <div class="row">
       <div class="col-md-12">
         <div class="box">
-          <h3>We provide communication support to the values of client.</h3>
+          <h3>We provide communication support to the valued customers</h3>
           <p>
             For more details, please contact<br />
-            info@greenvetbd.com
+             gvetpharma@gmail.com
           </p>
         </div>
       </div>

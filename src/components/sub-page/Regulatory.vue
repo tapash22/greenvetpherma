@@ -3,7 +3,10 @@
     <div class="row">
       <div class="col-md-12">
         <div class="box">
-          <h3>According to our client's requirments, we provide local market analysis. Our team has extensive knowledge about Bangladesh market.</h3>
+          <h3>
+            According to our client's requirements, we provide regulatory
+            guidance.
+          </h3>
         </div>
       </div>
     </div>

@@ -14,6 +14,7 @@ import Technology from "./components/sub-page/Technology.vue";
 import Emagazine from "./components/sub-page/E-magazine.vue";
 import Communications from "./components/sub-page/Communications.vue";
 import Marketanalysis from "./components/sub-page/Marketanalysis.vue";
+import Regulatory from "./components/sub-page/Regulatory.vue";
 
 import AQua from "./components/sub-pages/AQua.vue";
 import Poultry from "./components/sub-pages/Poultry.vue";
@@ -46,6 +47,7 @@ const routes = [
       { path: "emagazine", component: Emagazine },
       { path: "communications", component: Communications },
       { path: "marketanalysis", component: Marketanalysis },
+      { path: "regulatory", component: Regulatory },
 
       { path: "aqua", component: AQua },
       { path: "poultry", component: Poultry },

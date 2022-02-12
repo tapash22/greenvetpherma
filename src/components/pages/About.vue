@@ -5,10 +5,10 @@
       <div class="col-md-12">
         <div class="text">
           <p class="wrap">
-            We introduce ourselves as one of the most eminent suppliers of
-            premium quality range of cattle and poultry products as medicines,
-            vaccines and feed supplements. We also provide Veterinary
-            instruments, poultry feeders, and drinkers.
+            We introduce ourselves as eminent suppliers of premium quality range
+            of cattle, poultry, aqua and pet animels products as medicines and
+            feed supplements. We also provide Communications, Business Development, Technology Analysis, Market Analysis and Regulatory
+            Guidance
           </p>
         </div>
       </div>
@@ -33,7 +33,7 @@
             by innovating technologies updating know how and maintaining highly
             ethical standards in business operation ensuring benefit to society
             at large.Our purpose is to provide affordable and innovative
-            medicine at affordable price.
+            services at affordable price.
           </p>
         </div>
       </div>
@@ -67,7 +67,7 @@ h2 {
   background: #fff;
   display: flex;
 }
-.row .col-md-12{
+.row .col-md-12 {
   box-shadow: 0 0 10px rgba(0, 128, 0, 0.644);
 }
 .row .col-md-12 .text .wrap {
@@ -101,7 +101,7 @@ h2 {
   padding: 10px;
   margin: 5px;
 }
- .text .wrap {
+.text .wrap {
   font-size: 1.2;
   font-weight: 700;
   font-family: "Roboto Slab", serif;

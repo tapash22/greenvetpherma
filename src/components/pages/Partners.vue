@@ -12,6 +12,7 @@
             <div class="card-footer">
               <ul>
                 <li>{{ blog.author }}</li>
+                <li>{{blog.place}}</li>
               </ul>
             </div>
           </div>
@@ -30,7 +31,7 @@ export default {
         {
           id: "1",
           author: "Farmavet International",
-          place: "Bangladesh",
+          place: "Turkey",
           resion: "good",
           img: require("../../assets/image/far.png"),
           url:"https://www.farmavet.com.tr/en/"
@@ -38,7 +39,7 @@ export default {
         {
           id: "2",
           author: "Provet",
-          place: "Bangladesh",
+          place: "India",
           resion: "good",
           img: require("../../assets/image/provet.jpg"),
           url:"https://www.provet.in/"
@@ -46,7 +47,7 @@ export default {
         {
           id: "3",
           author: "Catalyst",
-          place: "Bangladesh",
+          place: "India",
           resion: "good",
           img: require("../../assets/image/cata.png"),
           url:"https://www.catalystlifesciences.in/"
@@ -159,15 +160,14 @@ h2 {
   list-style: none;
   font-size: 1rem;
   font-weight: 500;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
 }
 .card-footer ul li:nth-child(2) {
   font-size: 0.8rem;
   font-weight: 500;
-  color: #000;
-  text-transform: lowercase;
+  color: #fff;
 }
 
 @media only screen and (max-width: 767px) {

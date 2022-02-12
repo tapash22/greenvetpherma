@@ -179,7 +179,6 @@ export default {
   background-image: url("../../assets/image/home1.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 500px;
   padding: 0;

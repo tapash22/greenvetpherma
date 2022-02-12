@@ -85,7 +85,7 @@ export default {
           id: 8,
           title: "Regulatory Guidance",
           icon: "fa fa-bandcamp",
-          url: "/emagazine",
+          url: "/regulatory",
           des: "guidance for veterinary biologics, vaccinces, drugs, devices, nutritionals, and diagnostics",
         },
       ],

@@ -5,7 +5,7 @@
         <div class="box">
           <img src="../../assets/image/contact.jpg" />
           <address>
-            House No.:66(Ground Floor); Road No.:11;<br />
+            House No.: 66; &nbsp;Road No.: 11;<br />
             DIT Project, Merul-Budda, Dhaka.
           </address>
           <ul>

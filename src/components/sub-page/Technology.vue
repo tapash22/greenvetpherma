@@ -4,12 +4,12 @@
       <div class="col-md-12">
         <div class="box">
           <h3>
-            We provide technology analysis by the highly technical person as per
+            We provide technology analysis by the Highly technical person as per
             the clients requirments
           </h3>
           <p>
             For more details, please contact<br />
-            info@greenvetbd.com
+            gvetpharma@gmail.com
           </p>
         </div>
       </div>

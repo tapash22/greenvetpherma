@@ -15,11 +15,11 @@
       <div class="col-md-4">
         <h3>Find Location</h3>
         <ul>
-          <li>House: 66,&nbsp;Road:11,</li>
+          <li>House: 66,&nbsp;Road: 11,</li>
           <li>DIT,&nbsp;Merul-Badda</li>
           <li>Dhaka,&nbsp; Bangladesh</li>
           <li>+8801917114636</li>
-          <li style="margin-left: -30px">greenvetpharma@gmail.com</li>
+          <li style="margin-left: -30px">gvetpharma@gmail.com</li>
         </ul>
       </div>
       <div class="col-md-4 icons">
@@ -51,7 +51,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <p>All right reserved in &copy; Ultrawave.digital</p>
+        <p>Developed by &copy; ultrawave.digital</p>
       </div>
     </div>
   </div>
@@ -160,7 +160,7 @@
 }
 
 .icons ul li a i {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 900;
   padding: 5px;
   margin: 0;

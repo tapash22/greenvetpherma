@@ -188,67 +188,135 @@
   color: #000;
 }
 
-@media only screen and (max-width: 767px) {
-  .footer {
-    width: 100%;
-    background: #fff;
-  }
-  .row {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-  }
-  .brand {
-    text-align: center;
-    margin-top: 20px;
-    padding-bottom: 0;
-  }
-  .brand h2 {
-    color: #000;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  .icons {
-    padding: 5px;
-    justify-content: center;
-  }
-  .icons ul {
-    display: flex;
-    justify-content: center;
-  }
-  .icons ul li {
-    width: 30px;
-    height: 30px;
-    list-style: none;
-    background: rgb(43, 187, 55);
-    margin: 5px;
-    border-radius: 50%;
-  }
-  .icons li a {
-    color: #fff;
-  }
-  .icons i {
-    font-size: 1.5rem;
-    font-weight: 500;
-    align-items: center;
-    padding: 5px;
-  }
-  .address {
-    padding: 10px;
-    justify-content: center;
-    text-align: center;
-  }
-  .address h3 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-left: 40%;
-  }
-  .address ul li {
-    list-style: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #000;
-    text-align: center;
-  }
+@media only screen and (max-width: 436px) {
+.footer {
+  width: 100%;
+  /* background: rgba(81, 241, 169, 0.959); */
+  background: rgba(182, 238, 213, 0.959);
+  padding: 0;
+  margin: 0;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.row .col-md-4 {
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.services h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  padding: 10px;
+  margin:0;
+  color: #000;
+}
+.services ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.services ul li {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  margin: 2px;
+  list-style: none;
+}
+.services ul li a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+  font-family: "Roboto Slab", serif;
+}
+.col-md-4 h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000;
+  padding: 10px;
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+.col-md-4 ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.col-md-4 ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Slab", serif;
+}
+
+.icons ul {
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.icons ul li {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+  color: #000;
+  display: flex;
+  justify-content: left;
+}
+.icons ul li a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.icons ul li a i {
+  font-size: 2.8rem;
+  font-weight: 900;
+  padding: 5px;
+  margin: 0;
+  color: #000;
+  transition: 0.3s transform ease-out;
+}
+.icons ul li a i:hover {
+  transform: rotateZ(-25deg);
+  transition: 0.4s border ease-out;
+}
+
+.row .col-md-12 {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 0 10px #a0d9ef;
+}
+.col-md-12 p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #000;
+}
 }
 </style>

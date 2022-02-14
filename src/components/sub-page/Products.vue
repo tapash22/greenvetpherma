@@ -235,18 +235,75 @@ button {
   height: 100%;
   background-position: center;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 436px) {
   h2 {
-    margin-top: 190px;
-    padding: 20px;
+    margin-top: 130px;
+    padding: 10px;
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    color: rgb(45, 206, 131);
     text-transform: uppercase;
   }
+  .row {
+    widows: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+
+  }
   .col-md-4 {
-    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding:10px;
+    margin: 0;
+  }
+  .col-md-4 a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:100%;
+  }
+  .box {
+    border: 2px solid rgb(213, 216, 15);
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin: 5px 10px;
+    overflow: hidden;
+
+    transition: 0.3s all;
+  }
+  .header {
+    padding: 10px;
+    background: #fff;
+    height: 50px;
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  img {
+    width: 295px;
+    height: 200px;
+    transition: 0.3s all;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+  p {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  button {
+    width: 100%;
+    height: 50px;
   }
 }
 </style>

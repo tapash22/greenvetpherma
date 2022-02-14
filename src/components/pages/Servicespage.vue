@@ -150,18 +150,58 @@ h3 {
   padding: 10px;
 }
 
-@media only screen and (max-width: 767px) {
-  h2 {
-    margin-top: 190px;
-    padding: 20px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    color: rgb(45, 206, 131);
-    text-transform: uppercase;
-  }
-  .col-md-4 {
-    margin-left: 10%;
-  }
+@media only screen and (max-width: 436px) {
+h2 {
+  margin-top: 130px;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+
+  text-transform: uppercase;
+}
+.row {
+  justify-content: center;
+  align-items: center;
+  widows: 100%;
+}
+.col-md-3 {
+  justify-content: center;
+  width: 100%;
+  height: 220px;
+}
+.col-md-3 a {
+  text-decoration: none;
+  color: #000;
+}
+.box {
+  background: #fff;
+  width: 100%;
+  height: 200px;
+  margin: 5px 10px;
+  transform: scale(1);
+  transition: 0.3s transform ease-out;
+}
+.box:hover{
+    transform: scale(1.04);
+  transition: 0.4s transform ease-out;
+}
+.box i {
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  color: green;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
 }
 </style>

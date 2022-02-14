@@ -108,4 +108,77 @@ ul li a i{
   font-size: 2.5rem;
   font-weight: 700;
 }
+
+@media only screen and (max-width: 436px) {
+  .caotact {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.row {
+  widows: 100%;
+  height: 100%;
+  padding: 0;
+  margin-top: 130px;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+}
+.row .col-md-12 {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.col-md-12 .box {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.col-md-12 img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+}
+address {
+  width: 100%;
+  margin:0;
+  padding:30px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+  color: #000;
+  background:#fff;
+}
+ul{
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+ul li {
+  padding: 10px;
+  margin: 5px;
+  list-style: none;
+}
+ul li a{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+ul li a i{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+}
 </style>

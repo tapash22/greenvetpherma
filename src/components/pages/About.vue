@@ -7,7 +7,8 @@
           <p class="wrap">
             We introduce ourselves as eminent suppliers of premium quality range
             of cattle, poultry, aqua and pet animels products as medicines and
-            feed supplements. We also provide Communications, Business Development, Technology Analysis, Market Analysis and Regulatory
+            feed supplements. We also provide Communications, Business
+            Development, Technology Analysis, Market Analysis and Regulatory
             Guidance
           </p>
         </div>
@@ -15,7 +16,7 @@
     </div>
 
     <div
-      class="row my-2"
+      class="row my-2 vision"
       data-aos="fade-up"
       data-aos-delay="500"
       data-aos-once="false"
@@ -111,15 +112,76 @@ h2 {
   text-align: justify;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 436px) {
   h2 {
-    margin-top: 190px;
+    margin-top: 120px;
     padding: 20px;
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    color: rgb(45, 206, 131);
     text-transform: uppercase;
+  }
+  .row {
+    padding: 10px;
+    margin: 0;
+    widows:  100%;
+    background: #fff;
+    display: flex;
+  }
+  .row .col-md-12 {
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.644);
+    display: flex;
+    justify-content: center;
+  }
+  .row .col-md-12 .text .wrap {
+    padding: 10px;
+    margin:0;
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+  }
+  .vision{
+    widows: 100%;
+    height: 100%;
+    padding:10px;
+    margin:0;
+    display: block;
+    }
+
+  .col-md-2 {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin:0;
+  }
+  .col-md-2 img {
+    width: 100%;
+    height: 300px;
+    padding: 5px;
+    margin:0;
+  }
+  .col-md-10 {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  .col-md-10 .text {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+  }
+  .text .wrap {
+    font-size: 1.2;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin: 5px;
+    text-align: justify;
   }
 }
 </style>

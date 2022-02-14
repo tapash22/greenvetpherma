@@ -96,13 +96,46 @@ label {
   color: #000;
 }
 
-@media screen and (max-width: 759px) {
-  .col-md-6 {
-    margin-top: 180px;
-    width: 400px;
-    height: 300px;
-    margin-left: 10%;
-  }
+@media only screen and (max-width: 436px) {
+  .row {
+  widows: 100%;
+  height: 450px;
+  opacity: 0.9;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+.col-md-6 {
+  margin-top: 100px;
+  width: 400px;
+  height: 320px;
+  box-shadow: 2px 2px 5px blue;
+  text-align: left;
+  background: #fff;
+}
+h2 {
+  color: #000;
+  padding-top: 20px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  justify-content: center;
+  text-align: center;
+}
+
+.msg {
+  padding: 10px;
+  justify-content: center;
+}
+.button {
+ 
+text-align: left;
+}
+label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000;
+}
 }
 </style>
 

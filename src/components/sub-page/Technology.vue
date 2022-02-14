@@ -17,6 +17,14 @@
   </div>
 </template>
 
+<script>
+export default {
+    mounted() {
+    window.scrollTo(0, 0);
+  },
+}
+</script>
+
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Roboto+Slab:wght@300&display=swap");
 .row {
